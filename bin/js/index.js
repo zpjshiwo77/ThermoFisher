@@ -60,7 +60,7 @@ function loadComplete() {
  */
 function DevelopTest() {
     // iHallPage.init();
-    iProductpage.show();
+    iIntroApage.show();
     // iCulturePage.init();
     // iLabPage.init();
     // iResultPage.init();

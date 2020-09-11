@@ -40,6 +40,22 @@ var introBPage = function(){
     function eventInit() {
         page.backBtn.on(Laya.Event.MOUSE_DOWN, this, backToProPage);
         page.btn.on(Laya.Event.MOUSE_DOWN, this, showIntro);
+        page.closeBtn.on(Laya.Event.MOUSE_DOWN, this, closeIntro);
+    }
+
+    /**
+     * 关闭介绍
+     */
+    function closeIntro(){
+        page.closeBtn.visible = false;
+        Laya.Tween.to(page.intro, {
+            alpha: 0
+        }, 500);
+        setTimeout(function(){
+            page.intro.visible = false;
+            page.btn.visible = true;
+            page.backBtn.visible = true;
+        },500)
     }
 
     /**
@@ -48,6 +64,8 @@ var introBPage = function(){
     function showIntro(){
         page.btn.visible = false;
         page.intro.visible = true;
+        page.closeBtn.visible = true;
+        page.backBtn.visible = false;
         Laya.Tween.to(page.intro, {
             alpha: 1
         }, 500);

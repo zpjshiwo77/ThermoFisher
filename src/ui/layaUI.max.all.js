@@ -32,6 +32,7 @@ var introAUI=(function(_super){
 		    this.btn=null;
 		    this.backBtn=null;
 		    this.intro=null;
+		    this.closeBtn=null;
 
 			introAUI.__super.call(this);
 		}
@@ -45,7 +46,7 @@ var introAUI=(function(_super){
 
 		}
 
-		introAUI.uiView={"type":"View","props":{"width":1440,"height":750},"child":[{"type":"Image","props":{"y":0,"x":0,"skin":"images/index/bg3.jpg"}},{"type":"Image","props":{"y":645,"x":429,"width":59,"var":"btn","skin":"images/index/icon.png","pivotY":28,"pivotX":28,"height":58},"compId":3},{"type":"Image","props":{"y":600,"x":1214,"var":"backBtn","skin":"images/index/back.png"}},{"type":"Image","props":{"y":81,"x":229,"visible":false,"var":"intro","skin":"images/index/w1.png","alpha":0}}],"animations":[{"nodes":[{"target":3,"keyframes":{"scaleY":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":0},{"value":1.2,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":16}],"scaleX":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":0},{"value":1.2,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":16}],"alpha":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":0},{"value":0.5,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":16}]}}],"name":"ani1","id":1,"frameRate":24,"action":2}]};
+		introAUI.uiView={"type":"View","props":{"width":1440,"height":750},"child":[{"type":"Image","props":{"y":0,"x":0,"skin":"images/index/bg3.jpg"}},{"type":"Image","props":{"y":645,"x":429,"width":59,"var":"btn","skin":"images/index/icon.png","pivotY":28,"pivotX":28,"height":58},"compId":3},{"type":"Image","props":{"y":600,"x":1214,"var":"backBtn","skin":"images/index/back.png"}},{"type":"Image","props":{"y":81,"x":229,"visible":true,"var":"intro","skin":"images/index/w1.png","alpha":1}},{"type":"Sprite","props":{"y":532,"x":941,"width":156,"visible":true,"var":"closeBtn","height":58}}],"animations":[{"nodes":[{"target":3,"keyframes":{"scaleY":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":0},{"value":1.2,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":16}],"scaleX":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":0},{"value":1.2,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":16}],"alpha":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":0},{"value":0.5,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":16}]}}],"name":"ani1","id":1,"frameRate":24,"action":2}]};
 		return introAUI;
 	})(View);
 var introBUI=(function(_super){
@@ -55,6 +56,7 @@ var introBUI=(function(_super){
 		    this.btn=null;
 		    this.backBtn=null;
 		    this.intro=null;
+		    this.closeBtn=null;
 
 			introBUI.__super.call(this);
 		}
@@ -68,7 +70,7 @@ var introBUI=(function(_super){
 
 		}
 
-		introBUI.uiView={"type":"View","props":{"width":1440,"visible":true,"height":750,"alpha":1},"child":[{"type":"Image","props":{"skin":"images/index/bg4.jpg"}},{"type":"Image","props":{"y":316,"x":529,"width":59,"var":"btn","skin":"images/index/icon.png","pivotY":29,"pivotX":29,"height":58},"compId":3},{"type":"Image","props":{"y":610,"x":1193,"var":"backBtn","skin":"images/index/back.png"}},{"type":"Image","props":{"visible":false,"var":"intro","skin":"images/index/bg5.jpg","alpha":0}}],"animations":[{"nodes":[{"target":3,"keyframes":{"scaleY":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":0},{"value":1.2,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":16}],"scaleX":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":0},{"value":1.2,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":16}],"alpha":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":0},{"value":0.5,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":16}]}}],"name":"ani1","id":1,"frameRate":24,"action":2}]};
+		introBUI.uiView={"type":"View","props":{"width":1440,"visible":true,"height":750,"alpha":1},"child":[{"type":"Image","props":{"skin":"images/index/bg4.jpg"}},{"type":"Image","props":{"y":316,"x":529,"width":59,"var":"btn","skin":"images/index/icon.png","pivotY":29,"pivotX":29,"height":58},"compId":3},{"type":"Image","props":{"y":610,"x":1193,"var":"backBtn","skin":"images/index/back.png"}},{"type":"Image","props":{"visible":false,"var":"intro","skin":"images/index/bg5.jpg","alpha":0}},{"type":"Sprite","props":{"y":620,"x":1179,"width":252,"visible":false,"var":"closeBtn","height":118}}],"animations":[{"nodes":[{"target":3,"keyframes":{"scaleY":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":0},{"value":1.2,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleY","index":16}],"scaleX":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":0},{"value":1.2,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"scaleX","index":16}],"alpha":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":0},{"value":0.5,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":8},{"value":1,"tweenMethod":"linearNone","tween":true,"target":3,"key":"alpha","index":16}]}}],"name":"ani1","id":1,"frameRate":24,"action":2}]};
 		return introBUI;
 	})(View);
 var productUI=(function(_super){

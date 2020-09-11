@@ -39,18 +39,29 @@ var introAPage = function(){
      */
     function eventInit() {
         page.backBtn.on(Laya.Event.MOUSE_DOWN, this, backToProPage);
-        page.btn.on(Laya.Event.MOUSE_DOWN, this, showIntro);
+        page.btn.on(Laya.Event.MOUSE_DOWN, this, showIntroB);
+        page.closeBtn.on(Laya.Event.MOUSE_DOWN, this, closeIntro);
+    }
+
+    /**
+     * 关闭介绍
+     */
+    function closeIntro(){
+        page.closeBtn.visible = false;
+        Laya.Tween.to(page.intro, {
+            alpha: 0
+        }, 500);
+        setTimeout(function(){
+            page.intro.visible = false;
+        },500)
     }
 
     /**
      * 显示介绍
      */
-    function showIntro(){
-        page.btn.visible = false;
-        page.intro.visible = true;
-        Laya.Tween.to(page.intro, {
-            alpha: 1
-        }, 500);
+    function showIntroB(){
+        iIntroBpage.show();
+        _self.hide();
     }
 
     /**
