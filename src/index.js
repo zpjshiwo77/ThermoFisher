@@ -7,9 +7,9 @@ function LayaInit() {
     Laya.stage.alignH = "center";
     Laya.stage.alignV = "center";
     Laya.stage.screenMode = "horizontal";
-    Laya.stage.bgColor = "#ffffff";
+    Laya.stage.bgColor = "#dddddd";
     Laya.UIConfig.closeDialogOnSide = false;
-    Laya.URL.basePath = "https://cdn2.dhteam.net/osm/";
+    // Laya.URL.basePath = "https://cdn2.dhteam.net/osm/";
     Laya.loader.load(PreResources, laya.utils.Handler.create(this, loadUIInit), null);
 }
 LayaInit();
@@ -19,36 +19,37 @@ LayaInit();
  */
 function loadUIInit() {
     CountPageSize();
-    iOutPage.init();
     remUnitConverter(750);
     turnBoxPortraitTips();
     // landscape_lock();
 
-    Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete), laya.utils.Handler.create(this, loadPerUpdate, null, false));
-}
-
-/**
- * 加载进度
- */
-function loadPerUpdate(num) {
-    iOutPage.setPer(num);
+    for (var i = 0; i < 30; i++) {
+        Resources.push({ url: 'images/product/0'+(i<10?'0'+i:i)+'.png', type: Loader.IMAGE })
+    }
+    Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete), null);
 }
 
 /**
  * 加载结束
  */
 function loadComplete() {
-    iIntro.init();
-    iOutPage.openAnime();
+    iIndexpage = new indexPage();
+    iProductpage = new productPage();
+    iIntroApage = new introAPage();
+    iIntroBpage = new introBPage();
+    iIndexpage.init();
+    iProductpage.init();
+    iIntroApage.init();
+    iIntroBpage.init();
     // DevelopTest();
     if (typeof wx) {
         wxUser.init({
             shareInfo: {
-                title: "欧诗漫",
-                friend: "欢迎光临欧诗漫博物馆",
-                timeline: "欢迎光临欧诗漫博物馆",
-                link: "https://wechat.dhteam.net/osm/index.html",
-                image: "https://wechat.dhteam.net/osm/share.jpg",
+                title: "测试",
+                friend: "测试",
+                timeline: "测试",
+                // link: "https://wechat.dhteam.net/osm/index.html",
+                // image: "https://wechat.dhteam.net/osm/share.jpg",
             }
         });
     }
@@ -71,7 +72,7 @@ function DevelopTest() {
 function CountPageSize() {
     if (Browser.clientWidth < Browser.clientHeight) WindowW = (750 / Browser.clientWidth) * Browser.clientHeight;
     else WindowW = (750 / Browser.clientHeight) * Browser.clientWidth;
-    BgPageX = (WindowW - 1624) / 2;
+    BgPageX = (WindowW - 1440) / 2;
 }
 
 /**

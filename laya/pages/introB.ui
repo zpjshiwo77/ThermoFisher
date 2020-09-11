@@ -41,9 +41,9 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":610,"x":1193,"var":"baclBtn","skin":"images/index/back.png"},
+            "props":{"y":610,"x":1193,"var":"backBtn","skin":"images/index/back.png"},
             "nodeParent":1,
-            "label":"Image(baclBtn)",
+            "label":"Image(backBtn)",
             "isDirectory":false,
             "isAniNode":true,
             "hasChild":false,

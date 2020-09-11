@@ -1,4 +1,4 @@
-var indexPage = function(){
+var productPage = function(){
     var _self = this;
     var page;
     /**
@@ -7,25 +7,6 @@ var indexPage = function(){
     _self.init = function () {
         uiInit();
         eventInit();
-    }
-
-    /**
-     * 事件初始化
-     */
-    function eventInit() {
-        page.startBtn.on(Laya.Event.MOUSE_DOWN, this, showNextPage);
-        page.openBtn.on(Laya.Event.MOUSE_DOWN, this, showProductPage);
-    }
-
-    /**
-     * 显示下一页
-     */
-    function showNextPage(){
-        page.pageB.visible = true;
-        page.startBtn.visible = false;
-        Laya.Tween.to(page.pageB, {
-            alpha: 1
-        }, 500);
     }
 
     /**
@@ -53,10 +34,26 @@ var indexPage = function(){
     }
 
     /**
-     * 显示介绍页面
+     * 事件初始化
      */
-    function showProductPage(){
-        iProductpage.show();
+    function eventInit() {
+        page.btnA.on(Laya.Event.MOUSE_DOWN, this, showIntroA);
+        page.btnB.on(Laya.Event.MOUSE_DOWN, this, showIntroB);
+    }
+
+    /**
+     * 显示介绍页面A
+     */
+    function showIntroA(){
+        iIntroApage.show();
+        _self.hide();
+    }
+
+    /**
+     * 显示介绍页面B
+     */
+    function showIntroB(){
+        iIntroBpage.show();
         _self.hide();
     }
 
@@ -64,7 +61,8 @@ var indexPage = function(){
      * ui初始化
      */
     function uiInit() {
-        page = new indexUI();
+        page = new productUI();
+        page.visible = false;
         page.x = BgPageX + page.pivotX;
         Laya.stage.addChild(page);
     }
