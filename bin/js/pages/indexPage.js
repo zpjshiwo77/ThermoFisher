@@ -14,18 +14,6 @@ var indexPage = function(){
      */
     function eventInit() {
         page.startBtn.on(Laya.Event.MOUSE_DOWN, this, showNextPage);
-        page.openBtn.on(Laya.Event.MOUSE_DOWN, this, showProductPage);
-    }
-
-    /**
-     * 显示下一页
-     */
-    function showNextPage(){
-        page.pageB.visible = true;
-        page.startBtn.visible = false;
-        Laya.Tween.to(page.pageB, {
-            alpha: 1
-        }, 500);
     }
 
     /**
@@ -50,14 +38,6 @@ var indexPage = function(){
         setTimeout(function(){
             page.visible = false;
         },500)
-    }
-
-    /**
-     * 显示介绍页面
-     */
-    function showProductPage(){
-        iProductpage.show();
-        _self.hide();
     }
 
     /**

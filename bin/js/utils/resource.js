@@ -1,12 +1,13 @@
 var PreResources = [
-    { url: 'images/index/bg.jpg', type: Loader.IMAGE },
-    { url: 'images/index/bg2.jpg', type: Loader.IMAGE },
-    { url: 'images/index/bg3.jpg', type: Loader.IMAGE },
-    { url: 'images/index/bg4.jpg', type: Loader.IMAGE },
-    { url: 'images/index/bg5.jpg', type: Loader.IMAGE },
-    { url: 'images/index/w1.png', type: Loader.IMAGE },
-    { url: 'res/atlas/images/index.atlas', type: Loader.ATLAS }
+    { url: "images/loading/bar1.png", type: Loader.IMAGE },
+    { url: "images/loading/bar2.png", type: Loader.IMAGE },
+    { url: "images/loading/bg.jpg", type: Loader.IMAGE },
+    { url: 'res/atlas/images/loading.atlas', type: Loader.ATLAS }
 ];
 var Resources = [
-    // { url: 'images/culture/bg_01.jpg', type: Loader.IMAGE },
+    { url: 'res/atlas/images/index.atlas', type: Loader.ATLAS },
+    { url: 'res/atlas/images/chose.atlas', type: Loader.ATLAS },
+    { url: 'res/atlas/images/public.atlas', type: Loader.ATLAS },
 ];
+
+var unpackImg = ["images/chose/bg.jpg","images/index/bg.jpg","images/index/title.png","images/index/word.png","images/product100/s1/w.png","images/product100/s2/w.png","images/product100/s3/w.png","images/product100/s3.jpg","images/product100/sence/s1.jpg","images/product100/sence/s2.jpg","images/product100/sence/s3.jpg","images/product100/sence/s4.jpg","images/product100/sence/s5.jpg","images/product100/showcase/01.png","images/product100/showcase/02.png","images/product100/showcase/03.png","images/product100/showcase/04.png","images/product100/showcase/05.png","images/product100/showcase/06.png","images/product100/showcase/07.png","images/product100/showcase/08.png","images/product100/showcase/09.png","images/product100/showcase/10.png","images/product100/showcase/11.png","images/product100/showcase/12.png","images/product100/showcase/13.png","images/product100/showcase/14.png","images/product100/showcase/15.png","images/product100/showcase/16.png","images/product100/showcase/17.png","images/product100/showcase/18.png","images/product100/showcase/19.png","images/product100/showcase/20.png","images/product100/showcase/21.png","images/product100/showcase/22.png","images/product100/showcase/23.png","images/product100/showcase/24.png","images/product100/showcase/25.png","images/product100/showcase/26.png","images/product100/showcase/27.png","images/product100/showcase/28.png","images/product100/showcase/29.png","images/product100/showcase/30.png","images/product400/s1/1.jpg","images/product400/s1/2.jpg","images/product400/s1/w.png","images/product400/s1.jpg","images/product400/s2/1.jpg","images/product400/s2/2.jpg","images/product400/s2/3.jpg","images/product400/s2/4.jpg","images/product400/s2/5.jpg","images/product400/s2/6.jpg","images/product400/s2/7.jpg","images/product400/s2/w.png","images/product400/s2.jpg","images/product400/s3/1.jpg","images/product400/s3/2.jpg","images/product400/s3/w.png","images/product400/s3.jpg","images/product400/s4/w.png","images/product400/s4.jpg","images/product400/showcase/01.png","images/product400/showcase/02.png","images/product400/showcase/03.png","images/product400/showcase/04.png","images/product400/showcase/05.png","images/product400/showcase/06.png","images/product400/showcase/07.png","images/product400/showcase/08.png","images/product400/showcase/09.png","images/product400/showcase/10.png","images/product400/showcase/11.png","images/product400/showcase/12.png","images/product400/showcase/13.png","images/product400/showcase/14.png","images/product400/showcase/15.png","images/product400/showcase/16.png","images/product400/showcase/17.png","images/product400/showcase/18.png","images/product400/showcase/19.png","images/product400/showcase/20.png","images/product400/showcase/21.png","images/product400/showcase/22.png","images/product400/showcase/23.png","images/product400/showcase/24.png","images/product400/showcase/25.png","images/product400/showcase/26.png","images/product400/showcase/27.png","images/product400/showcase/28.png","images/product400/showcase/29.png","images/product400/showcase/30.png","images/product400/w1.png","images/public/1.png","images/public/2.png","images/public/3.png","images/public/bg.jpg"]

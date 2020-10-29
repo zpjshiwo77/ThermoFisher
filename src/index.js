@@ -23,24 +23,36 @@ function loadUIInit() {
     turnBoxPortraitTips();
     // landscape_lock();
 
-    for (var i = 0; i < 30; i++) {
-        Resources.push({ url: 'images/product/0'+(i<10?'0'+i:i)+'.png', type: Loader.IMAGE })
+    iLoadingPage.init();
+
+    for (var i = 0; i < unpackImg.length; i++) {
+        var item = { url: unpackImg[i], type: Loader.IMAGE };
+        Resources.push(item);
     }
-    Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete), null);
+    Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete), laya.utils.Handler.create(this, loadPerUpdate, null, false));
+}
+
+/**
+ * 加载进度
+ */
+function loadPerUpdate(num) {
+    iLoadingPage.setPer(num);
 }
 
 /**
  * 加载结束
  */
 function loadComplete() {
-    iIndexpage = new indexPage();
-    iProductpage = new productPage();
-    iIntroApage = new introAPage();
-    iIntroBpage = new introBPage();
-    iIndexpage.init();
-    iProductpage.init();
-    iIntroApage.init();
-    iIntroBpage.init();
+    iIndexPage.init();
+    iChosePage.init();
+    iShowcasePage.init();
+    iPortalPage.init();
+    iBigSencePage.init();
+    iSmallSencePage.init();
+
+    iLoadingPage.hide();
+    iIndexPage.show();
+    
     // DevelopTest();
     if (typeof wx) {
         wxUser.init({
@@ -59,11 +71,11 @@ function loadComplete() {
  *  开发测试用
  */
 function DevelopTest() {
-    // iHallPage.init();
-    iIntroApage.show();
-    // iCulturePage.init();
-    // iLabPage.init();
-    // iResultPage.init();
+    // iChosePage.show();
+    // iShowcasePage.show("big");
+    // iPortalPage.show();
+    // iBigSencePage.show("Box3");
+    iSmallSencePage.show("Box1");
 }
 
 /**
@@ -72,7 +84,7 @@ function DevelopTest() {
 function CountPageSize() {
     if (Browser.clientWidth < Browser.clientHeight) WindowW = (750 / Browser.clientWidth) * Browser.clientHeight;
     else WindowW = (750 / Browser.clientHeight) * Browser.clientWidth;
-    BgPageX = (WindowW - 1440) / 2;
+    BgPageX = (WindowW - 1624) / 2;
 }
 
 /**

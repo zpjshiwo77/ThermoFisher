@@ -5,4 +5,6 @@ var Stat = Laya.Stat;
 
 var MOVE_SENSITIVITY = 0.01;
 
-var iIndexpage,iProductpage,iIntroApage,iIntroBpage;
+let WindowW = 0,BgPageX = 0;
+
+var iLoadingPage,iIndexPage,iBigSencePage,iChosePage,iPortalPage,iShowcasePage,iSmallSencePage;
