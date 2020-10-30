@@ -1,6 +1,7 @@
 var indexPage = function(){
     var _self = this;
     var page;
+    var type;
     
     /**
      * 初始化
@@ -20,12 +21,14 @@ var indexPage = function(){
     /**
      * 显示
      */
-    _self.show = function(){
+    _self.show = function(t){
+        type = t;
+        page.word.source = Laya.Loader.getRes('images/index/'+type+'W.png');
         page.visible = true;
         page.alpha = 0;
         Laya.Tween.to(page, {
             alpha: 1
-        }, 500);
+        }, TRF_TIME);
     }
 
     /**
@@ -34,11 +37,11 @@ var indexPage = function(){
     _self.hide = function(){
         Laya.Tween.to(page, {
             alpha: 0
-        }, 500);
+        }, TRF_TIME);
 
         setTimeout(function(){
             page.visible = false;
-        },500)
+        },TRF_TIME)
     }
 
     /**
@@ -46,7 +49,7 @@ var indexPage = function(){
      */
     function showNextPage(){
         _self.hide();
-        iChosePage.show();
+        iShowcasePage.show(type);
     }
 
     /**

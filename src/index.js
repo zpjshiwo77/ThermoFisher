@@ -51,9 +51,10 @@ function loadComplete() {
     iSmallSencePage.init();
 
     iLoadingPage.hide();
-    iIndexPage.show();
+    iChosePage.show();
     
     // DevelopTest();
+
     if (typeof wx) {
         wxUser.init({
             shareInfo: {
@@ -74,8 +75,8 @@ function DevelopTest() {
     // iChosePage.show();
     // iShowcasePage.show("big");
     // iPortalPage.show();
-    // iBigSencePage.show("Box3");
-    iSmallSencePage.show("Box1");
+    iBigSencePage.show("Box3");
+    // iSmallSencePage.show("Box1");
 }
 
 /**

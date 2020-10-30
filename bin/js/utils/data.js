@@ -4,7 +4,8 @@ var Loader = Laya.Loader;
 var Stat = Laya.Stat;
 
 var MOVE_SENSITIVITY = 0.01;
+var TRF_TIME = 300;
 
-let WindowW = 0,BgPageX = 0;
+var WindowW = 0,BgPageX = 0;
 
 var iLoadingPage,iIndexPage,iBigSencePage,iChosePage,iPortalPage,iShowcasePage,iSmallSencePage;

@@ -62,19 +62,19 @@ var showcasePage = function(){
         page.alpha = 0;
         Laya.Tween.to(page, {
             alpha: 1
-        }, 500);
+        }, TRF_TIME);
         if(enterFlag[t]){
             setTimeout(function () {
                 enterAnime();
                 enterFlag[t] = false;
-            }, 500);
+            }, TRF_TIME);
         }
         else{
             setTimeout(function () {
                 animeIndex = page[type].index;
                 controlFlag = true;
                 page[type+"Point"].visible = (animeIndex > 10 && animeIndex < 18);
-            }, 500)
+            }, TRF_TIME)
         }
     }
 
@@ -84,11 +84,11 @@ var showcasePage = function(){
     _self.hide = function(){
         Laya.Tween.to(page, {
             alpha: 0
-        }, 500);
+        }, TRF_TIME);
 
         setTimeout(function(){
             page.visible = false;
-        },500)
+        },TRF_TIME)
 
         page[type].visible = false;
         page[type+"Point"].visible = false;

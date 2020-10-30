@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":7,
+    "selectedBox":101,
+    "selecteID":110,
     "props":{"width":1624,"visible":false,"sceneColor":"#000000","height":750},
     "nodeParent":-1,
     "label":"View",
@@ -15,7 +15,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"var":"senceBg","skin":"images/product400/s3.jpg"},
+            "props":{"var":"senceBg","skin":"images/product400/s2.jpg"},
             "nodeParent":1,
             "label":"Image(senceBg)",
             "isOpen":true,
@@ -30,6 +30,204 @@
         {
             "x":15,
             "type":"Box",
+            "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox1","height":750},
+            "nodeParent":1,
+            "label":"Box(pointBox1)",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":11,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":176,"x":496,"width":80,"name":"s11","height":80},
+                    "nodeParent":11,
+                    "label":"Sprite(s11)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":10,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":176,"x":637,"width":80,"name":"s12","height":80},
+                    "nodeParent":11,
+                    "label":"Sprite(s12)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":12,
+                    "child":[
+                        ]
+                }],
+            "$HIDDEN":true
+        },
+        {
+            "x":15,
+            "type":"Box",
+            "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox2","height":750},
+            "nodeParent":1,
+            "label":"Box(pointBox2)",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":35,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":363,"x":383,"width":80,"name":"s21","height":80},
+                    "nodeParent":35,
+                    "label":"Sprite(s21)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":36,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":74,"x":661,"width":80,"name":"s23","height":80},
+                    "nodeParent":35,
+                    "label":"Sprite(s23)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":37,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":216,"x":979,"width":80,"name":"s24","height":80},
+                    "nodeParent":35,
+                    "label":"Sprite(s24)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":38,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":612,"x":1028,"width":80,"name":"s26","height":80},
+                    "nodeParent":35,
+                    "label":"Sprite(s26)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":39,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":517,"x":1064,"width":80,"name":"s27","height":80},
+                    "nodeParent":35,
+                    "label":"Sprite(s27)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":94,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":220,"x":1080,"width":80,"name":"s25","height":80},
+                    "nodeParent":35,
+                    "label":"Sprite(s25)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":95,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":363,"x":488,"width":80,"name":"s22","height":80},
+                    "nodeParent":35,
+                    "label":"Sprite(s22)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":96,
+                    "child":[
+                        ]
+                }],
+            "$HIDDEN":true
+        },
+        {
+            "x":15,
+            "type":"Box",
+            "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox3","height":750},
+            "nodeParent":1,
+            "label":"Box(pointBox3)",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":43,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":501,"x":884,"width":80,"name":"s31","height":80},
+                    "nodeParent":43,
+                    "label":"Sprite(s31)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":44,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":256,"x":875,"width":80,"name":"s32","height":80},
+                    "nodeParent":43,
+                    "label":"Sprite(s32)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":45,
+                    "child":[
+                        ]
+                }],
+            "$HIDDEN":true
+        },
+        {
+            "x":15,
+            "type":"Image",
+            "props":{"y":420,"x":1350,"var":"backShowcase","skin":"images/public/back.png"},
+            "nodeParent":1,
+            "label":"Image(backShowcase)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":8,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Box",
             "props":{"y":0,"x":0,"visible":false,"var":"partBox"},
             "nodeParent":1,
             "label":"Box(partBox)",
@@ -40,7 +238,6 @@
             "compId":7,
             "child":[
                 {
-                    "x":30,
                     "type":"Image",
                     "props":{"var":"partImg","skin":"images/product400/s3/2.jpg"},
                     "nodeParent":7,
@@ -53,11 +250,10 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS11","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs11","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS11)",
+                    "label":"Box(pointBoxs11)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -79,11 +275,10 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS12","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs12","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS12)",
+                    "label":"Box(pointBoxs12)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -105,11 +300,10 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS21","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs21","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS21)",
+                    "label":"Box(pointBoxs21)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -167,11 +361,10 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS22","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs22","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS22)",
+                    "label":"Box(pointBoxs22)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -217,11 +410,10 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS23","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs23","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS23)",
+                    "label":"Box(pointBoxs23)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -255,11 +447,10 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS24","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs24","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS24)",
+                    "label":"Box(pointBoxs24)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -290,14 +481,13 @@
                             "child":[
                                 ]
                         }],
-                    "$HIDDEN":true
+                    "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS25","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs25","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS25)",
+                    "label":"Box(pointBoxs25)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -319,11 +509,10 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS26","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs26","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS26)",
+                    "label":"Box(pointBoxs26)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -345,11 +534,10 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS27","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs27","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS27)",
+                    "label":"Box(pointBoxs27)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -371,11 +559,10 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS31","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs31","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS31)",
+                    "label":"Box(pointBoxs31)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -397,11 +584,10 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Box",
-                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS32","height":750},
+                    "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs32","height":750},
                     "nodeParent":7,
-                    "label":"Box(pointBoxS32)",
+                    "label":"Box(pointBoxs32)",
                     "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -435,7 +621,6 @@
                     "$HIDDEN":true
                 },
                 {
-                    "x":30,
                     "type":"Image",
                     "props":{"y":420,"x":1350,"var":"backSence","skin":"images/public/back.png"},
                     "nodeParent":7,
@@ -447,178 +632,12 @@
                     "child":[
                         ]
                 }],
-            "$HIDDEN":false
-        },
-        {
-            "x":15,
-            "type":"Box",
-            "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox1","height":750},
-            "nodeParent":1,
-            "label":"Box(pointBox1)",
-            "isOpen":false,
-            "isDirectory":true,
-            "isAniNode":true,
-            "hasChild":true,
-            "compId":11,
-            "child":[
-                {
-                    "type":"Sprite",
-                    "props":{"y":176,"x":496,"width":80,"name":"btn1","height":80},
-                    "nodeParent":11,
-                    "label":"Sprite(btn1)",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":10,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"Sprite",
-                    "props":{"y":176,"x":637,"width":80,"name":"btn2","height":80},
-                    "nodeParent":11,
-                    "label":"Sprite(btn2)",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":12,
-                    "child":[
-                        ]
-                }],
             "$HIDDEN":true
         },
         {
             "x":15,
             "type":"Box",
-            "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox2","height":750},
-            "nodeParent":1,
-            "label":"Box(pointBox2)",
-            "isOpen":false,
-            "isDirectory":true,
-            "isAniNode":true,
-            "hasChild":true,
-            "compId":35,
-            "child":[
-                {
-                    "type":"Sprite",
-                    "props":{"y":367,"x":478,"width":80,"name":"btn1","height":80},
-                    "nodeParent":35,
-                    "label":"Sprite(btn1)",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":36,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"Sprite",
-                    "props":{"y":74,"x":661,"width":80,"name":"btn2","height":80},
-                    "nodeParent":35,
-                    "label":"Sprite(btn2)",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":37,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"Sprite",
-                    "props":{"y":300,"x":1029,"width":80,"name":"btn3","height":80},
-                    "nodeParent":35,
-                    "label":"Sprite(btn3)",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":38,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"Sprite",
-                    "props":{"y":608,"x":1040,"width":80,"name":"btn4","height":80},
-                    "nodeParent":35,
-                    "label":"Sprite(btn4)",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":39,
-                    "child":[
-                        ]
-                }],
-            "$HIDDEN":true
-        },
-        {
-            "x":15,
-            "type":"Box",
-            "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox3","height":750},
-            "nodeParent":1,
-            "label":"Box(pointBox3)",
-            "isOpen":false,
-            "isDirectory":true,
-            "isAniNode":true,
-            "hasChild":true,
-            "compId":43,
-            "child":[
-                {
-                    "x":30,
-                    "type":"Sprite",
-                    "props":{"y":266,"x":680,"width":80,"name":"btn1","height":80},
-                    "nodeParent":43,
-                    "label":"Sprite(btn1)",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":44,
-                    "child":[
-                        ]
-                },
-                {
-                    "x":30,
-                    "type":"Sprite",
-                    "props":{"y":256,"x":875,"width":80,"name":"btn2","height":80},
-                    "nodeParent":43,
-                    "label":"Sprite(btn2)",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":45,
-                    "child":[
-                        ]
-                },
-                {
-                    "x":30,
-                    "type":"Sprite",
-                    "props":{"y":519,"x":892,"width":80,"name":"btn3","height":80},
-                    "nodeParent":43,
-                    "label":"Sprite(btn3)",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":46,
-                    "child":[
-                        ]
-                }],
-            "$HIDDEN":true
-        },
-        {
-            "x":15,
-            "type":"Image",
-            "props":{"y":420,"x":1350,"var":"backShowcase","skin":"images/public/back.png"},
-            "nodeParent":1,
-            "label":"Image(backShowcase)",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":8,
-            "child":[
-                ]
-        },
-        {
-            "x":15,
-            "type":"Box",
-            "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"introBox","height":750},
+            "props":{"y":375,"x":812,"width":1624,"visible":false,"var":"introBox","pivotY":375,"pivotX":812,"height":750},
             "nodeParent":1,
             "label":"Box(introBox)",
             "isOpen":true,
@@ -652,16 +671,148 @@
                     "compId":5,
                     "child":[
                         ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":205,"x":230,"width":529,"visible":false,"var":"introBox1","height":399},
+                    "nodeParent":4,
+                    "label":"Sprite(introBox1)",
+                    "isOpen":true,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":98,
+                    "child":[
+                        {
+                            "x":45,
+                            "type":"Panel",
+                            "props":{"width":529,"vScrollBarSkin":"images/public/vscroll.png","height":399},
+                            "nodeParent":98,
+                            "label":"Panel",
+                            "isOpen":true,
+                            "isDirectory":true,
+                            "isAniNode":true,
+                            "hasChild":true,
+                            "compId":101,
+                            "child":[
+                                {
+                                    "x":60,
+                                    "type":"Image",
+                                    "props":{"width":529,"var":"testbox1","skin":"images/product400/s1/word.png","height":640},
+                                    "nodeParent":101,
+                                    "label":"Image(testbox1)",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":110,
+                                    "child":[
+                                        ]
+                                }]
+                        }],
+                    "$HIDDEN":true
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":205,"x":230,"visible":false,"var":"introBox2","skin":"images/product400/s2/word.png"},
+                    "nodeParent":4,
+                    "label":"Image(introBox2)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":111,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":205,"x":230,"width":529,"visible":false,"var":"introBox3","height":399},
+                    "nodeParent":4,
+                    "label":"Sprite(introBox3)",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":107,
+                    "child":[
+                        {
+                            "type":"Panel",
+                            "props":{"width":529,"vScrollBarSkin":"images/public/vscroll.png","height":399},
+                            "nodeParent":107,
+                            "label":"Panel",
+                            "isOpen":false,
+                            "isDirectory":true,
+                            "isAniNode":true,
+                            "hasChild":true,
+                            "compId":108,
+                            "child":[
+                                {
+                                    "type":"Image",
+                                    "props":{"width":529,"skin":"images/product400/s3/word.png","height":750},
+                                    "nodeParent":108,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":112,
+                                    "child":[
+                                        ]
+                                }]
+                        }]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":590,"x":480,"var":"ar","skin":"images/public/ar.png"},
+                    "nodeParent":4,
+                    "label":"Image(ar)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":116,
+                    "child":[
+                        ]
                 }],
-            "$HIDDEN":true
+            "$HIDDEN":false
         }],
     "animations":[
         {
             "nodes":[
-                ],
+                {
+                    "target":116,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":590,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":116,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":600,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":116,
+                                "key":"y",
+                                "index":10
+                            },
+                            {
+                                "value":590,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":116,
+                                "key":"y",
+                                "index":20
+                            }]
+                    }
+                }],
             "name":"ani1",
             "id":1,
             "frameRate":24,
-            "action":0
+            "action":2
         }]
 }

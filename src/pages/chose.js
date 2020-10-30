@@ -23,7 +23,7 @@ var chosePage = function(){
      */
     function showNextPage(type){
         _self.hide();
-        iShowcasePage.show(type);
+        iIndexPage.show(type);
     }
 
     /**
@@ -34,11 +34,11 @@ var chosePage = function(){
         page.alpha = 0;
         Laya.Tween.to(page, {
             alpha: 1
-        }, 500);
+        }, TRF_TIME);
 
         setTimeout(function(){
             clickFlag = true;
-        },500)
+        },TRF_TIME)
     }
 
     /**
@@ -47,11 +47,11 @@ var chosePage = function(){
     _self.hide = function(){
         Laya.Tween.to(page, {
             alpha: 0
-        }, 500);
+        }, TRF_TIME);
 
         setTimeout(function(){
             page.visible = false;
-        },500)
+        },TRF_TIME)
 
         clickFlag = false;
     }

@@ -6,10 +6,11 @@ P CC22E3A6 logo.png
 D images/common
 D images/index
 R 45BA91EC bg.jpg
+R 26B30011 bigW.png
 P 79B01293 logo.png
+R BD46B740 smallW.png
 P 0ADEE150 start.png
 R E04F9A51 title.png
-R 26B30011 word.png
 D images/loading
 R 226596DE bar1.png
 R 9AD55DA7 bar2.png
@@ -33,6 +34,11 @@ P 453AE823 back.png
 R 9600BB12 bg.jpg
 P B139BF40 icon.png
 P 7A64688B logo.png
+R 68BF2F79 mask1.png
+P 99ECF577 vscroll$bar.png
+P 9DE68DE2 vscroll$down.png
+P C0F8A0E2 vscroll$up.png
+P C4273D1E vscroll.png
 D images/product100/s1
 R 58826EA8 w.png
 D images/product100/s2
@@ -80,6 +86,7 @@ D images/product400/s1
 R 83419395 1.jpg
 R 414F76F9 2.jpg
 R 480282F4 w.png
+R CDE0A184 word.png
 D images/product400/s2
 R 98C8827C 1.jpg
 R 27FE527D 2.jpg
@@ -89,10 +96,12 @@ R 786DAB03 5.jpg
 R 84E8EF94 6.jpg
 R 77AF3CE2 7.jpg
 R 7F8B6D1B w.png
+R 4A6EE133 word.png
 D images/product400/s3
 R 6FE5F8EC 1.jpg
 R 1295065C 2.jpg
 R 7A6B07F2 w.png
+R 4B4B52EF word.png
 D images/product400/s4
 R 4D38026C w.png
 D images/product400/showcase

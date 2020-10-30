@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":1,
+    "selectedBox":4,
+    "selecteID":7,
     "props":{"width":1624,"visible":false,"sceneColor":"#000000","sceneBg":"laya/views/index.jpg","height":750},
     "nodeParent":-1,
     "label":"View",
@@ -66,9 +66,9 @@
                 {
                     "x":30,
                     "type":"Image",
-                    "props":{"y":286,"x":137,"skin":"images/index/word.png"},
+                    "props":{"y":286,"x":137,"var":"word","skin":"images/index/bigW.png"},
                     "nodeParent":4,
-                    "label":"Image",
+                    "label":"Image(word)",
                     "isDirectory":false,
                     "isAniNode":true,
                     "hasChild":false,

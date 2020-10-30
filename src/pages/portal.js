@@ -27,7 +27,7 @@ var portalPage = function(){
         page.alpha = 0;
         Laya.Tween.to(page, {
             alpha: 1
-        }, 500);
+        }, TRF_TIME);
     }
 
     /**
@@ -36,11 +36,11 @@ var portalPage = function(){
     _self.hide = function(){
         Laya.Tween.to(page, {
             alpha: 0
-        }, 500);
+        }, TRF_TIME);
 
         setTimeout(function(){
             page.visible = false;
-        },500)
+        },TRF_TIME)
     }
 
     /**

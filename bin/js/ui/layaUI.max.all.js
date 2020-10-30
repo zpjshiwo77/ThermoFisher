@@ -5,28 +5,33 @@ var Dialog=laya.ui.Dialog;
 var bigSenceUI=(function(_super){
 		function bigSenceUI(){
 			
+		    this.ani1=null;
 		    this.senceBg=null;
-		    this.partBox=null;
-		    this.partImg=null;
-		    this.pointBoxS11=null;
-		    this.pointBoxS12=null;
-		    this.pointBoxS21=null;
-		    this.pointBoxS22=null;
-		    this.pointBoxS23=null;
-		    this.pointBoxS24=null;
-		    this.pointBoxS25=null;
-		    this.pointBoxS26=null;
-		    this.pointBoxS27=null;
-		    this.pointBoxS31=null;
-		    this.pointBoxS32=null;
-		    this.backSence=null;
 		    this.pointBox1=null;
 		    this.pointBox2=null;
 		    this.pointBox3=null;
 		    this.backShowcase=null;
+		    this.partBox=null;
+		    this.partImg=null;
+		    this.pointBoxs11=null;
+		    this.pointBoxs12=null;
+		    this.pointBoxs21=null;
+		    this.pointBoxs22=null;
+		    this.pointBoxs23=null;
+		    this.pointBoxs24=null;
+		    this.pointBoxs25=null;
+		    this.pointBoxs26=null;
+		    this.pointBoxs27=null;
+		    this.pointBoxs31=null;
+		    this.pointBoxs32=null;
+		    this.backSence=null;
 		    this.introBox=null;
 		    this.intro=null;
 		    this.viewBtn=null;
+		    this.introBox1=null;
+		    this.introBox2=null;
+		    this.introBox3=null;
+		    this.ar=null;
 
 			bigSenceUI.__super.call(this);
 		}
@@ -40,7 +45,7 @@ var bigSenceUI=(function(_super){
 
 		}
 
-		bigSenceUI.uiView={"type":"View","props":{"width":1624,"visible":false,"height":750},"child":[{"type":"Image","props":{"var":"senceBg","skin":"images/product400/s3.jpg"}},{"type":"Box","props":{"y":0,"x":0,"visible":false,"var":"partBox"},"child":[{"type":"Image","props":{"var":"partImg","skin":"images/product400/s3/2.jpg"}},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS11","height":750},"child":[{"type":"Sprite","props":{"y":128,"x":491,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS12","height":750},"child":[{"type":"Sprite","props":{"y":408,"x":1321,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS21","height":750},"child":[{"type":"Sprite","props":{"y":285,"x":138,"width":80,"height":80}},{"type":"Sprite","props":{"y":393,"x":654,"width":80,"height":80}},{"type":"Sprite","props":{"y":357,"x":841,"width":80,"height":80}},{"type":"Sprite","props":{"y":407,"x":1244,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS22","height":750},"child":[{"type":"Sprite","props":{"y":258,"x":193,"width":80,"height":80}},{"type":"Sprite","props":{"y":212,"x":381,"width":80,"height":80}},{"type":"Sprite","props":{"y":209,"x":568,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS23","height":750},"child":[{"type":"Sprite","props":{"y":150,"x":703,"width":80,"height":80}},{"type":"Sprite","props":{"y":86,"x":1069,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS24","height":750},"child":[{"type":"Sprite","props":{"y":282,"x":698,"width":80,"height":80}},{"type":"Sprite","props":{"y":248,"x":1056,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS25","height":750},"child":[{"type":"Sprite","props":{"y":210,"x":875,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS26","height":750},"child":[{"type":"Sprite","props":{"y":258,"x":939,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS27","height":750},"child":[{"type":"Sprite","props":{"y":94,"x":828,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS31","height":750},"child":[{"type":"Sprite","props":{"y":154,"x":842,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS32","height":750},"child":[{"type":"Sprite","props":{"y":304,"x":415,"width":80,"height":80}},{"type":"Sprite","props":{"y":246,"x":865,"width":80,"height":80}}]},{"type":"Image","props":{"y":420,"x":1350,"var":"backSence","skin":"images/public/back.png"}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox1","height":750},"child":[{"type":"Sprite","props":{"y":176,"x":496,"width":80,"name":"btn1","height":80}},{"type":"Sprite","props":{"y":176,"x":637,"width":80,"name":"btn2","height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox2","height":750},"child":[{"type":"Sprite","props":{"y":367,"x":478,"width":80,"name":"btn1","height":80}},{"type":"Sprite","props":{"y":74,"x":661,"width":80,"name":"btn2","height":80}},{"type":"Sprite","props":{"y":300,"x":1029,"width":80,"name":"btn3","height":80}},{"type":"Sprite","props":{"y":608,"x":1040,"width":80,"name":"btn4","height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox3","height":750},"child":[{"type":"Sprite","props":{"y":266,"x":680,"width":80,"name":"btn1","height":80}},{"type":"Sprite","props":{"y":256,"x":875,"width":80,"name":"btn2","height":80}},{"type":"Sprite","props":{"y":519,"x":892,"width":80,"name":"btn3","height":80}}]},{"type":"Image","props":{"y":420,"x":1350,"var":"backShowcase","skin":"images/public/back.png"}},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"introBox","height":750},"child":[{"type":"Image","props":{"y":375,"x":812,"var":"intro","skin":"images/product400/s1/w.png","pivotY":337,"pivotX":625}},{"type":"Sprite","props":{"y":578,"x":1045,"width":326,"var":"viewBtn","height":94}}]}]};
+		bigSenceUI.uiView={"type":"View","props":{"width":1624,"visible":false,"height":750},"child":[{"type":"Image","props":{"var":"senceBg","skin":"images/product400/s2.jpg"}},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox1","height":750},"child":[{"type":"Sprite","props":{"y":176,"x":496,"width":80,"name":"s11","height":80}},{"type":"Sprite","props":{"y":176,"x":637,"width":80,"name":"s12","height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox2","height":750},"child":[{"type":"Sprite","props":{"y":363,"x":383,"width":80,"name":"s21","height":80}},{"type":"Sprite","props":{"y":74,"x":661,"width":80,"name":"s23","height":80}},{"type":"Sprite","props":{"y":216,"x":979,"width":80,"name":"s24","height":80}},{"type":"Sprite","props":{"y":612,"x":1028,"width":80,"name":"s26","height":80}},{"type":"Sprite","props":{"y":517,"x":1064,"width":80,"name":"s27","height":80}},{"type":"Sprite","props":{"y":220,"x":1080,"width":80,"name":"s25","height":80}},{"type":"Sprite","props":{"y":363,"x":488,"width":80,"name":"s22","height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox3","height":750},"child":[{"type":"Sprite","props":{"y":501,"x":884,"width":80,"name":"s31","height":80}},{"type":"Sprite","props":{"y":256,"x":875,"width":80,"name":"s32","height":80}}]},{"type":"Image","props":{"y":420,"x":1350,"var":"backShowcase","skin":"images/public/back.png"}},{"type":"Box","props":{"y":0,"x":0,"visible":false,"var":"partBox"},"child":[{"type":"Image","props":{"var":"partImg","skin":"images/product400/s3/2.jpg"}},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs11","height":750},"child":[{"type":"Sprite","props":{"y":128,"x":491,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs12","height":750},"child":[{"type":"Sprite","props":{"y":408,"x":1321,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs21","height":750},"child":[{"type":"Sprite","props":{"y":285,"x":138,"width":80,"height":80}},{"type":"Sprite","props":{"y":393,"x":654,"width":80,"height":80}},{"type":"Sprite","props":{"y":357,"x":841,"width":80,"height":80}},{"type":"Sprite","props":{"y":407,"x":1244,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs22","height":750},"child":[{"type":"Sprite","props":{"y":258,"x":193,"width":80,"height":80}},{"type":"Sprite","props":{"y":212,"x":381,"width":80,"height":80}},{"type":"Sprite","props":{"y":209,"x":568,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs23","height":750},"child":[{"type":"Sprite","props":{"y":150,"x":703,"width":80,"height":80}},{"type":"Sprite","props":{"y":86,"x":1069,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs24","height":750},"child":[{"type":"Sprite","props":{"y":282,"x":698,"width":80,"height":80}},{"type":"Sprite","props":{"y":248,"x":1056,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs25","height":750},"child":[{"type":"Sprite","props":{"y":210,"x":875,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs26","height":750},"child":[{"type":"Sprite","props":{"y":258,"x":939,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs27","height":750},"child":[{"type":"Sprite","props":{"y":94,"x":828,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs31","height":750},"child":[{"type":"Sprite","props":{"y":154,"x":842,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs32","height":750},"child":[{"type":"Sprite","props":{"y":304,"x":415,"width":80,"height":80}},{"type":"Sprite","props":{"y":246,"x":865,"width":80,"height":80}}]},{"type":"Image","props":{"y":420,"x":1350,"var":"backSence","skin":"images/public/back.png"}}]},{"type":"Box","props":{"y":375,"x":812,"width":1624,"visible":false,"var":"introBox","pivotY":375,"pivotX":812,"height":750},"child":[{"type":"Image","props":{"y":375,"x":812,"var":"intro","skin":"images/product400/s1/w.png","pivotY":337,"pivotX":625}},{"type":"Sprite","props":{"y":578,"x":1045,"width":326,"var":"viewBtn","height":94}},{"type":"Sprite","props":{"y":205,"x":230,"width":529,"visible":false,"var":"introBox1","height":399},"child":[{"type":"Panel","props":{"width":529,"vScrollBarSkin":"images/public/vscroll.png","height":399},"child":[{"type":"Image","props":{"width":529,"skin":"images/product400/s1/word.png","height":640}}]}]},{"type":"Image","props":{"y":205,"x":230,"visible":false,"var":"introBox2","skin":"images/product400/s2/word.png"}},{"type":"Sprite","props":{"y":205,"x":230,"width":529,"visible":false,"var":"introBox3","height":399},"child":[{"type":"Panel","props":{"width":529,"vScrollBarSkin":"images/public/vscroll.png","height":399},"child":[{"type":"Image","props":{"width":529,"skin":"images/product400/s3/word.png","height":750}}]}]},{"type":"Image","props":{"y":590,"x":480,"var":"ar","skin":"images/public/ar.png"},"compId":116}]}],"animations":[{"nodes":[{"target":116,"keyframes":{"y":[{"value":590,"tweenMethod":"linearNone","tween":true,"target":116,"key":"y","index":0},{"value":600,"tweenMethod":"linearNone","tween":true,"target":116,"key":"y","index":10},{"value":590,"tweenMethod":"linearNone","tween":true,"target":116,"key":"y","index":20}]}}],"name":"ani1","id":1,"frameRate":24,"action":2}]};
 		return bigSenceUI;
 	})(View);
 var choseUI=(function(_super){
@@ -70,6 +75,7 @@ var indexUI=(function(_super){
 		function indexUI(){
 			
 		    this.cont=null;
+		    this.word=null;
 		    this.startBtn=null;
 
 			indexUI.__super.call(this);
@@ -84,7 +90,7 @@ var indexUI=(function(_super){
 
 		}
 
-		indexUI.uiView={"type":"View","props":{"width":1624,"visible":false,"height":750},"child":[{"type":"Image","props":{"skin":"images/index/bg.jpg","name":"bg","alpha":1}},{"type":"Box","props":{"y":0,"x":453,"width":1100,"var":"cont","height":750},"child":[{"type":"Image","props":{"y":630,"x":840,"skin":"images/index/logo.png"}},{"type":"Image","props":{"y":112,"x":311,"skin":"images/index/title.png"}},{"type":"Image","props":{"y":286,"x":137,"skin":"images/index/word.png"}},{"type":"Image","props":{"y":498,"x":137,"var":"startBtn","skin":"images/index/start.png"}}]}]};
+		indexUI.uiView={"type":"View","props":{"width":1624,"visible":false,"height":750},"child":[{"type":"Image","props":{"skin":"images/index/bg.jpg","name":"bg","alpha":1}},{"type":"Box","props":{"y":0,"x":453,"width":1100,"var":"cont","height":750},"child":[{"type":"Image","props":{"y":630,"x":840,"skin":"images/index/logo.png"}},{"type":"Image","props":{"y":112,"x":311,"skin":"images/index/title.png"}},{"type":"Image","props":{"y":286,"x":137,"var":"word","skin":"images/index/bigW.png"}},{"type":"Image","props":{"y":498,"x":137,"var":"startBtn","skin":"images/index/start.png"}}]}]};
 		return indexUI;
 	})(View);
 var loadingUI=(function(_super){
@@ -184,18 +190,19 @@ var smallSenceUI=(function(_super){
 		function smallSenceUI(){
 			
 		    this.senceBg=null;
-		    this.partBox=null;
-		    this.partImg=null;
-		    this.pointBoxS2=null;
-		    this.pointBoxS3=null;
-		    this.pointBoxS4=null;
-		    this.pointBoxS5=null;
-		    this.backSence=null;
-		    this.pointBox=null;
+		    this.pointBox1=null;
+		    this.pointBox2=null;
 		    this.backShowcase=null;
 		    this.introBox=null;
 		    this.intro=null;
 		    this.viewBtn=null;
+		    this.partBox=null;
+		    this.partImg=null;
+		    this.pointBoxs2=null;
+		    this.pointBoxs3=null;
+		    this.pointBoxs4=null;
+		    this.pointBoxs5=null;
+		    this.backSence=null;
 
 			smallSenceUI.__super.call(this);
 		}
@@ -209,6 +216,6 @@ var smallSenceUI=(function(_super){
 
 		}
 
-		smallSenceUI.uiView={"type":"View","props":{"width":1624,"visible":false,"height":750},"child":[{"type":"Image","props":{"var":"senceBg","skin":"images/product100/sence/s1.jpg"}},{"type":"Box","props":{"y":0,"x":0,"visible":false,"var":"partBox"},"child":[{"type":"Image","props":{"var":"partImg","skin":"images/product100/sence/s5.jpg"}},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS2","height":750},"child":[{"type":"Sprite","props":{"y":300,"x":737,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS3","height":750},"child":[{"type":"Sprite","props":{"y":284,"x":1121,"width":80,"height":80}},{"type":"Sprite","props":{"y":221,"x":915,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS4","height":750},"child":[{"type":"Sprite","props":{"y":335,"x":672,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxS5","height":750},"child":[{"type":"Sprite","props":{"y":274,"x":501,"width":80,"height":80}},{"type":"Sprite","props":{"y":372,"x":841,"width":80,"height":80}},{"type":"Sprite","props":{"y":369,"x":950,"width":80,"height":80}}]},{"type":"Image","props":{"y":420,"x":1350,"var":"backSence","skin":"images/public/back.png"}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox","height":750},"child":[{"type":"Sprite","props":{"y":109,"x":663,"width":80,"name":"btn1","height":80}},{"type":"Sprite","props":{"y":125,"x":883,"width":80,"name":"btn2","height":80}},{"type":"Sprite","props":{"y":219,"x":1177,"width":80,"name":"btn3","height":80}},{"type":"Sprite","props":{"y":469,"x":650,"width":80,"name":"btn4","height":80}},{"type":"Sprite","props":{"y":602,"x":737,"width":80,"name":"btn5","height":80}},{"type":"Sprite","props":{"y":564,"x":974,"width":80,"name":"btn6","height":80}},{"type":"Sprite","props":{"y":467,"x":1077,"width":80,"name":"btn7","height":80}}]},{"type":"Image","props":{"y":420,"x":1350,"var":"backShowcase","skin":"images/public/back.png"}},{"type":"Box","props":{"y":75,"x":367,"width":889,"visible":false,"var":"introBox","height":600},"child":[{"type":"Image","props":{"y":300,"x":445,"var":"intro","skin":"images/product100/s2/w.png","pivotY":300,"pivotX":445}},{"type":"Sprite","props":{"y":407,"x":484,"width":326,"var":"viewBtn","height":94}}]}]};
+		smallSenceUI.uiView={"type":"View","props":{"width":1624,"visible":false,"height":750},"child":[{"type":"Image","props":{"var":"senceBg","skin":"images/product100/sence/s1.jpg"}},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox1","height":750},"child":[{"type":"Sprite","props":{"y":469,"x":650,"width":80,"name":"s4","height":80}},{"type":"Sprite","props":{"y":602,"x":737,"width":80,"name":"s5","height":80}},{"type":"Sprite","props":{"y":564,"x":974,"width":80,"name":"s2","height":80}},{"type":"Sprite","props":{"y":467,"x":1077,"width":80,"name":"s3","height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBox2","height":750},"child":[{"type":"Sprite","props":{"y":109,"x":663,"width":80,"name":"btn1","height":80}},{"type":"Sprite","props":{"y":125,"x":883,"width":80,"name":"btn2","height":80}},{"type":"Sprite","props":{"y":219,"x":1177,"width":80,"name":"btn3","height":80}}]},{"type":"Image","props":{"y":420,"x":1350,"var":"backShowcase","skin":"images/public/back.png"}},{"type":"Box","props":{"y":75,"x":367,"width":889,"visible":false,"var":"introBox","height":600},"child":[{"type":"Image","props":{"y":300,"x":445,"var":"intro","skin":"images/product100/s2/w.png","pivotY":300,"pivotX":445}},{"type":"Sprite","props":{"y":407,"x":484,"width":326,"var":"viewBtn","height":94}}]},{"type":"Box","props":{"y":0,"x":0,"visible":false,"var":"partBox"},"child":[{"type":"Image","props":{"var":"partImg","skin":"images/product100/sence/s5.jpg"}},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs2","height":750},"child":[{"type":"Sprite","props":{"y":300,"x":737,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs3","height":750},"child":[{"type":"Sprite","props":{"y":284,"x":1121,"width":80,"height":80}},{"type":"Sprite","props":{"y":221,"x":915,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs4","height":750},"child":[{"type":"Sprite","props":{"y":335,"x":672,"width":80,"height":80}}]},{"type":"Box","props":{"y":0,"x":0,"width":1624,"visible":false,"var":"pointBoxs5","height":750},"child":[{"type":"Sprite","props":{"y":274,"x":501,"width":80,"height":80}},{"type":"Sprite","props":{"y":372,"x":841,"width":80,"height":80}},{"type":"Sprite","props":{"y":369,"x":950,"width":80,"height":80}}]},{"type":"Image","props":{"y":420,"x":1350,"var":"backSence","skin":"images/public/back.png"}}]}]};
 		return smallSenceUI;
 	})(View);
