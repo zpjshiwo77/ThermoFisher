@@ -30,12 +30,12 @@ D images/public
 R B30BA3C1 1.png
 R 98CA1D16 2.png
 R FBA470ED 3.png
-P 708301C0 ar.png
+R 708301C0 ar.png
 P 453AE823 back.png
 R 9600BB12 bg.jpg
-P 4B5E5F00 btn.png
+R 4B5E5F00 btn.png
 P B139BF40 icon.png
-P 7A64688B logo.png
+R 7A64688B logo.png
 R 68BF2F79 mask1.png
 P 99ECF577 vscroll$bar.png
 P 9DE68DE2 vscroll$down.png

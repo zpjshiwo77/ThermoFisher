@@ -127,10 +127,134 @@
 			height: 7.5rem;
 			transform: translate(-50%,-50%);
 		}
+		@font-face { font-family: fzt; src: url('font/fzt.ttf');}
+		@font-face { font-family: fzw; src: url('font/fzw.ttf');}
+		.fontLoad1{
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 1px;
+			font-family: fzt;
+			opacity: 0;
+		}
+		.fontLoad2{
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 1px;
+			font-family: fzw;
+			opacity: 0;
+		}
+		img{
+			pointer-events: none;
+		}
+		.full{
+			position: absolute;
+			top: 0;
+			left: 0;
+		    width: 100%;
+			height: 100%;
+		}
+		#productBox{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 99999999;
+			background: url('images/public/bg.jpg') no-repeat;
+			background-size: cover;
+		}
+		#productBox .cont{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 11rem;
+			height: 6.91rem;
+			/* transform: translate(-50%, -50%) rotate(90deg); */
+			transform: translate(-50%, -50%);
+		}
+		#productBox .cont .logo{
+			position: absolute;
+			bottom: -0.2rem;
+			left: 0.23rem;
+			width: 3.04rem;
+		}
+		#productBox .cont .proImg{
+			position: absolute;
+			top: 1rem;
+			right: 0.5rem;
+			width: 4.23rem;
+		}
+		#productBox .cont .title{
+			padding: 1.25rem 0 0.4rem 0.64rem;
+			width: 8rem;
+			font-size: 0.35rem;
+			font-family: fzt;
+			position: relative;
+			z-index: 2;
+		}
+		#productBox .cont .wordBox{
+			width: 8rem;
+			height: 3rem;
+			overflow: hidden;
+			margin-left: 0.64rem;
+			position: relative;
+			z-index: 9;
+		}
+		#productBox .cont .wordBox .wordCont{
+			overflow-y: auto;
+			width: 100%;
+			height: 100%;
+		}
+		#productBox .cont .wordBox .wordCont p:first-child{
+			padding-top: 0;
+		}
+		#productBox .cont .wordBox p.secT{
+			font-size: 0.25rem;
+			font-family: fzw;
+			font-weight: bold;
+			padding: 0.4rem 0 0.2rem;
+		}
+		#productBox .cont .wordBox p.word{
+			font-size: 0.22rem;
+			font-family: fzw;
+			line-height: 1.5;
+		}
+		#productBox .cont .btnBox{
+			position: absolute;
+			right: 0.2rem;
+			bottom: 1rem;
+			width: 2.56rem;
+			height: 0.31rem;
+		}
 	</style>
 </head>
 <body>
-	<!--以下引用了常用类库，如果不使用，可以删除-->
+	<div class="fontLoad1">1</div>
+	<div class="fontLoad2">2</div>
+	<div id="productBox">
+		<div class="cont">
+			<img src="images/public/1.png" alt="" class="full">
+			<img src="images/public/logo.png" alt="" class="logo">
+			<img src="images/product/1.jpg" alt="" class="proImg">
+			<p class="title" id="proTitle">Thermo Scientific 1300系列A2型生物安全柜</p>
+			<div class="wordBox">
+				<div class="wordCont">
+					<p class="secT">产品简介：</p>
+					<p class="word" id="proIntro">1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜</p>
+					<p class="secT">产品特点</p>
+					<p class="word" id="proFeature">1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜</p>
+				</div>
+			</div>
+			<img src="images/public/ar.png" class="ar">
+			<div class="btnBox">
+				<img src="images/public/btn.png" class="full">
+				<div class="btn" id="awardBtn"></div>
+				<div class="btn" id="moreBtn"></div>
+			</div>
+		</div>
+	</div>
 	
 	<!--核心包，封装了显示对象渲染，事件，时间管理，时间轴动画，缓动，消息交互,socket，本地存储，鼠标触摸，声音，加载，颜色滤镜，位图字体等-->
 	<script type="text/javascript" src="libs/laya.core.js"></script>

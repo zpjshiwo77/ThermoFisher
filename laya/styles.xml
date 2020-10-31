@@ -1,4 +1,7 @@
 <res>
    <item name="images/common" type="" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
    <item name="images/product" type="" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="images/public/ar.png" type="Image" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="images/public/btn.png" type="Button" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="images/public/logo.png" type="Image" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
 </res>
