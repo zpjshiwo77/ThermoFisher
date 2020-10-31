@@ -27,16 +27,18 @@ R 8F27F8F0 s3.jpg
 R 1FFD95E2 s4.jpg
 R 4D38026C w1.png
 D images/public
-R B30BA3C1 1.png
-R 98CA1D16 2.png
-R FBA470ED 3.png
+R 883FF250 1.png
+R 3E5FE500 2.png
+R 8E6CDCF7 3.png
 R 708301C0 ar.png
 P 453AE823 back.png
 R 9600BB12 bg.jpg
+R 001B61FD bg.png
 R 4B5E5F00 btn.png
 P B139BF40 icon.png
 R 7A64688B logo.png
 R 68BF2F79 mask1.png
+R 8FB50AE1 mask2.png
 P 99ECF577 vscroll$bar.png
 P 9DE68DE2 vscroll$down.png
 P C0F8A0E2 vscroll$up.png

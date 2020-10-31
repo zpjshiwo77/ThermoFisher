@@ -127,16 +127,7 @@
 			height: 7.5rem;
 			transform: translate(-50%,-50%);
 		}
-		@font-face { font-family: fzt; src: url('font/fzt.ttf');}
-		@font-face { font-family: fzw; src: url('font/fzw.ttf');}
-		.fontLoad1{
-			position: absolute;
-			top: 0;
-			left: 0;
-			font-size: 1px;
-			font-family: fzt;
-			opacity: 0;
-		}
+		@font-face { font-family: fzw; src: url('font/fzt.ttf');}
 		.fontLoad2{
 			position: absolute;
 			top: 0;
@@ -164,6 +155,8 @@
 			z-index: 99999999;
 			background: url('images/public/bg.jpg') no-repeat;
 			background-size: cover;
+			display: none;
+			transition: opacity 2s;
 		}
 		#productBox .cont{
 			position: absolute;
@@ -171,8 +164,14 @@
 			left: 50%;
 			width: 11rem;
 			height: 6.91rem;
-			/* transform: translate(-50%, -50%) rotate(90deg); */
-			transform: translate(-50%, -50%);
+			 transform: translate(-50%, -50%) rotate(90deg); 
+		}
+		#bghead{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 2rem;
 		}
 		#productBox .cont .logo{
 			position: absolute;
@@ -182,25 +181,30 @@
 		}
 		#productBox .cont .proImg{
 			position: absolute;
-			top: 1rem;
-			right: 0.5rem;
+			top: 1.3rem;
+			right: 0.35rem;
 			width: 4.23rem;
 		}
 		#productBox .cont .title{
-			padding: 1.25rem 0 0.4rem 0.64rem;
+			padding: 1.5rem 0 0.4rem 0.9rem;
 			width: 8rem;
-			font-size: 0.35rem;
-			font-family: fzt;
+			font-size: 0.33rem;
+			font-family: fzw;
+			font-weight: bold;
 			position: relative;
 			z-index: 2;
+			line-height: 1.5;
+			margin: 0;
 		}
 		#productBox .cont .wordBox{
-			width: 8rem;
-			height: 3rem;
+			width: 5rem;
+			height: 2.7rem;
 			overflow: hidden;
-			margin-left: 0.64rem;
+			margin-left: 0.9rem;
 			position: relative;
 			z-index: 9;
+			-webkit-mask: url('images/public/mask2.png');
+			-webkit-mask-size: 100%;
 		}
 		#productBox .cont .wordBox .wordCont{
 			overflow-y: auto;
@@ -210,41 +214,74 @@
 		#productBox .cont .wordBox .wordCont p:first-child{
 			padding-top: 0;
 		}
+		#productBox .cont .wordBox .wordCont p:last-child{
+			padding-bottom: 0.2rem;
+		}
 		#productBox .cont .wordBox p.secT{
-			font-size: 0.25rem;
+			font-size: 0.3rem;
 			font-family: fzw;
 			font-weight: bold;
 			padding: 0.4rem 0 0.2rem;
+			margin: 0;
 		}
 		#productBox .cont .wordBox p.word{
-			font-size: 0.22rem;
+			font-size: 0.2rem;
 			font-family: fzw;
 			line-height: 1.5;
+			margin: 0;
 		}
 		#productBox .cont .btnBox{
 			position: absolute;
-			right: 0.2rem;
-			bottom: 1rem;
+			right: 1rem;
+			bottom: 1.9rem;
 			width: 2.56rem;
 			height: 0.31rem;
+			z-index: 999;
+		}
+		#productBox .cont .btnBox .btn{
+			cursor: pointer;
+			float: left;
+			width: 50%;
+			height: 100%;
+		}
+		#backBtn{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 2.4rem;
+			height: 0.8rem;
+			z-index: 999;
+		}
+		.ar{
+			position: absolute;
+			bottom: 0.9rem;
+			left: 3rem;
+			width: 0.3rem;
+			z-index: 9;
+			-webkit-animation: updowning 1s ease infinite;
+		}
+		@-webkit-keyframes updowning{
+			0%{transform: translate(0,0);}
+			50%{transform: translate(0,0.2rem);}
+			100%{transform: translate(0,0);}
 		}
 	</style>
 </head>
 <body>
-	<div class="fontLoad1">1</div>
 	<div class="fontLoad2">2</div>
 	<div id="productBox">
 		<div class="cont">
-			<img src="images/public/1.png" alt="" class="full">
+			<img src="images/public/bg.png" alt="" class="full">
 			<img src="images/public/logo.png" alt="" class="logo">
 			<img src="images/product/1.jpg" alt="" class="proImg">
-			<p class="title" id="proTitle">Thermo Scientific 1300系列A2型生物安全柜</p>
+			<img src="images/public/1.png" alt="" id="bghead">
+			<p class="title" id="proTitle"></p>
 			<div class="wordBox">
 				<div class="wordCont">
 					<p class="secT">产品简介：</p>
-					<p class="word" id="proIntro">1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜</p>
-					<p class="secT">产品特点</p>
-					<p class="word" id="proFeature">1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜1300系列A2型生物安全柜</p>
+					<p class="word" id="proIntro"></p>
+					<p class="secT">产品特点：</p>
+					<p class="word" id="proFeature"></p>
 				</div>
 			</div>
 			<img src="images/public/ar.png" class="ar">
@@ -253,6 +290,7 @@
 				<div class="btn" id="awardBtn"></div>
 				<div class="btn" id="moreBtn"></div>
 			</div>
+			<div id="backBtn"></div>
 		</div>
 	</div>
 	
