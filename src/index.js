@@ -80,8 +80,13 @@ function DevelopTest() {
     // iChosePage.show();
     // iShowcasePage.show("big");
     // iPortalPage.show();
-    iBigSencePage.show("Box3");
+    // iBigSencePage.show("Box3");
     // iSmallSencePage.show("Box1");
+    iProductPage.show("p1");
+
+    setTimeout(function(){
+        iProductPage.show("p2");
+    },3000)
 }
 
 /**

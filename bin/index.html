@@ -156,7 +156,21 @@
 			background: url('images/public/bg.jpg') no-repeat;
 			background-size: cover;
 			display: none;
-			transition: opacity 2s;
+			opacity: 0;
+		}
+		.proShow{
+			-webkit-animation: showing 0.3s ease forwards;
+		}
+		@-webkit-keyframes showing{
+			0%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+		.proHide{
+			-webkit-animation: hideing 0.3s ease forwards;
+		}
+		@-webkit-keyframes hideing{
+			0%{opacity: 1;}
+			100%{opacity: 0;}
 		}
 		#productBox .cont{
 			position: absolute;
@@ -164,7 +178,7 @@
 			left: 50%;
 			width: 11rem;
 			height: 6.91rem;
-			 transform: translate(-50%, -50%) rotate(90deg); 
+			transform: translate(-50%, -50%) rotate(90deg);
 		}
 		#bghead{
 			position: absolute;
@@ -181,7 +195,7 @@
 		}
 		#productBox .cont .proImg{
 			position: absolute;
-			top: 1.3rem;
+			top: 1.6rem;
 			right: 0.35rem;
 			width: 4.23rem;
 		}
@@ -215,7 +229,7 @@
 			padding-top: 0;
 		}
 		#productBox .cont .wordBox .wordCont p:last-child{
-			padding-bottom: 0.2rem;
+			padding-bottom: 0.3rem;
 		}
 		#productBox .cont .wordBox p.secT{
 			font-size: 0.3rem;
@@ -233,7 +247,7 @@
 		#productBox .cont .btnBox{
 			position: absolute;
 			right: 1rem;
-			bottom: 1.9rem;
+			bottom: 1.8rem;
 			width: 2.56rem;
 			height: 0.31rem;
 			z-index: 999;
@@ -262,8 +276,44 @@
 		}
 		@-webkit-keyframes updowning{
 			0%{transform: translate(0,0);}
-			50%{transform: translate(0,0.2rem);}
+			50%{transform: translate(0,0.15rem);}
 			100%{transform: translate(0,0);}
+		}
+
+		#videoBox{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999999999;
+			background-color: #000000;
+			display: none;
+		}
+		#myVideo{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 10rem;
+			height: 5.64rem;
+			transform: translate(-50%, -50%) rotate(90deg); 
+		}
+		#closeBtn{
+			position: absolute;
+			bottom: 1.2rem;
+			right: 0.3rem;
+			width: 1rem;
+			height: 0.6rem;
+			background-color: #fff;
+			color: #333333;
+			line-height: 0.6rem;
+			text-align: center;
+			border-radius: 0.1rem;
+			transform: rotate(90deg); 
+			font-size: 0.22rem;
+			letter-spacing: 0.05rem;
+			z-index: 999;
+			cursor: pointer;
 		}
 	</style>
 </head>
@@ -273,11 +323,11 @@
 		<div class="cont">
 			<img src="images/public/bg.png" alt="" class="full">
 			<img src="images/public/logo.png" alt="" class="logo">
-			<img src="images/product/1.jpg" alt="" class="proImg">
+			<img src="images/product/1.jpg" alt="" class="proImg" id="proImg">
 			<img src="images/public/1.png" alt="" id="bghead">
 			<p class="title" id="proTitle"></p>
 			<div class="wordBox">
-				<div class="wordCont">
+				<div class="wordCont" id="wordCont">
 					<p class="secT">产品简介：</p>
 					<p class="word" id="proIntro"></p>
 					<p class="secT">产品特点：</p>
@@ -292,6 +342,15 @@
 			</div>
 			<div id="backBtn"></div>
 		</div>
+	</div>
+
+	<div id="videoBox">
+		<video id="myVideo" x5-playsinline="true" playsinline="true"
+		webkit-playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true"
+		x-webkit-airplay="allow" 
+		controls
+		x5-video-orientation="portraint" preload="auto" src=""></video>
+		<div id="closeBtn">关闭</div>
 	</div>
 	
 	<!--核心包，封装了显示对象渲染，事件，时间管理，时间轴动画，缓动，消息交互,socket，本地存储，鼠标触摸，声音，加载，颜色滤镜，位图字体等-->
