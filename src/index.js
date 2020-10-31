@@ -29,6 +29,10 @@ function loadUIInit() {
         var item = { url: unpackImg[i], type: Loader.IMAGE };
         Resources.push(item);
     }
+    for (var i = 1; i <= 26; i++) {
+        var item = { url: "images/product/"+i+".jpg", type: Loader.IMAGE };
+        Resources.push(item);
+    }
     Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete), laya.utils.Handler.create(this, loadPerUpdate, null, false));
 }
 
@@ -49,6 +53,7 @@ function loadComplete() {
     iPortalPage.init();
     iBigSencePage.init();
     iSmallSencePage.init();
+    iProductPage.init();
 
     iLoadingPage.hide();
     iChosePage.show();

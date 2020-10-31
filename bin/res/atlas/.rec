@@ -17,6 +17,7 @@ R 9AD55DA7 bar2.png
 R 101D4F5B bg.jpg
 P 26C4AC60 d.png
 P 96F16CFF loading.png
+D images/product
 D images/product100
 R 7E162927 s3.jpg
 D images/product400
@@ -26,12 +27,13 @@ R 8F27F8F0 s3.jpg
 R 1FFD95E2 s4.jpg
 R 4D38026C w1.png
 D images/public
-R F4E5BB2C 1.png
-R 459A33AB 2.png
-R C3EEB24F 3.png
+R B30BA3C1 1.png
+R 98CA1D16 2.png
+R FBA470ED 3.png
 P 708301C0 ar.png
 P 453AE823 back.png
 R 9600BB12 bg.jpg
+P 4B5E5F00 btn.png
 P B139BF40 icon.png
 P 7A64688B logo.png
 R 68BF2F79 mask1.png
