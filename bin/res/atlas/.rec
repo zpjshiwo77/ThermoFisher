@@ -30,6 +30,7 @@ D images/public
 R 883FF250 1.png
 R 3E5FE500 2.png
 R 8E6CDCF7 3.png
+R 496F10EE 4.png
 R 708301C0 ar.png
 P 453AE823 back.png
 R 60B54E0B bg.jpg
@@ -44,9 +45,9 @@ P 9DE68DE2 vscroll$down.png
 P C0F8A0E2 vscroll$up.png
 P C4273D1E vscroll.png
 D images/product100/s1
-R 58826EA8 w.png
-D images/product100/s2
 R 74FA4898 w.png
+D images/product100/s2
+R 58826EA8 w.png
 D images/product100/s3
 R 9334477B w.png
 D images/product100/sence

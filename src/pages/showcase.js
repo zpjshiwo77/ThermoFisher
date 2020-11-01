@@ -124,8 +124,11 @@ var showcasePage = function(){
         }, 1600);
 
         setTimeout(function () {
+            page[type].stop();
+            page[type+"Point"].visible = true;
+            animeIndex = page[type].index;
             controlFlag = true;
-        }, 3200)
+        }, 2400)
     }
 
     /**

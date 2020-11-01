@@ -108,7 +108,7 @@ var bigSencePage = function () {
      */
     function showProIntro(name) {
         if (clickFlag) {
-            console.log("11" + name)
+            iProductPage.show(name)
         }
     }
 

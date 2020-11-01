@@ -75,6 +75,10 @@ var smallSencePage = function () {
      */
     function showPartBox(name) {
         if (clickFlag) {
+            if(name.length == 3){
+                showProIntro(name);
+                return;
+            }
             page["pointBox" + name].visible = true;
             page.partImg.source = Laya.Loader.getRes('images/product100/sence/' + name + '.jpg');
 
@@ -92,7 +96,7 @@ var smallSencePage = function () {
      */
     function showProIntro(name) {
         if (clickFlag) {
-            console.log("11" + name)
+            iProductPage.show(name)
         }
     }
 
@@ -148,6 +152,10 @@ var smallSencePage = function () {
      */
     function closeIntroBox() {
         if (clickFlag) {
+            if(senceId == 2){
+                showProIntro("p27");
+                return;
+            }
             Laya.Tween.to(page.introBox, {
                 alpha: 0
             }, TRF_TIME);

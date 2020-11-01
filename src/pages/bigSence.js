@@ -108,7 +108,7 @@ var bigSencePage = function () {
      */
     function showProIntro(name) {
         if (clickFlag) {
-            console.log("11" + name)
+            iProductPage.show(name)
         }
     }
 
@@ -213,8 +213,8 @@ var bigSencePage = function () {
         dealIntro(page.introBox1);
         dealIntro(page.introBox3);
 
-        page.backShowcase.x = 1624 - page.backShowcase.width + page.x - 95;
-        page.backSence.x = 1624 - page.backSence.width + page.x - 95;
+        page.backShowcase.x = 1624 - page.backShowcase.width + page.x - 150;
+        page.backSence.x = 1624 - page.backSence.width + page.x - 150;
 
         if (WindowW < 1400) {
             page.introBox.scaleX = 0.9;
