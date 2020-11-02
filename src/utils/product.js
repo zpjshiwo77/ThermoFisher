@@ -11,8 +11,8 @@ var products = {
     "p2":{
         titleType:1,
         img:"images/product/2.jpg",
-        name:"Thermo Scientifi Krio G4 冷冻透射电子显微镜",
-        intro:"Krios&trade G4冷冻透射电镜旨在为用户提供一种更简单、更快速和更可靠的方法来从分子水平上揭示生命机制。作为同类产品中最紧凑的产品，Krios&trade G4配备稳定性非常高的300kV透射电镜平台和行业领先的自动样品加载器，非常适用于如自动化单颗粒分析等流程。作为全新一代的Krios&trade平台，Krios&trade G4采用了全新的光学模式、具有改进的光学指标和实时预处理功能，极大提高了工作效率和分辨率性能。",
+        name:"Thermo Scientific Krio G4 冷冻透射电子显微镜",
+        intro:"Krios&trade; G4冷冻透射电镜旨在为用户提供一种更简单、更快速和更可靠的方法来从分子水平上揭示生命机制。作为同类产品中最紧凑的产品，Krios&trade; G4配备稳定性非常高的300kV透射电镜平台和行业领先的自动样品加载器，非常适用于如自动化单颗粒分析等流程。作为全新一代的Krios&trade平台，Krios&trade; G4采用了全新的光学模式、具有改进的光学指标和实时预处理功能，极大提高了工作效率和分辨率性能。",
         feature:"改进的人体工学，增强的自动化功能、系统的用户指南和先进的性能监控，使样品更换和数据采集更加轻松；<br>极大提高生产率，无边缘效应成像（FFI）、无像差成像区域位移（AFIS）和（可选）Falcon 4 检测器的强大组合显<br>著提高了 SPA 的通量<br>工作流程连通性，无缝衔接 SPA 冷冻电子断层扫描和 MicroED 工作流程，在整个工作流程中实现方便且无污染风险的样品转移",
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/G4 冷冻透射电子显微镜.pdf"
@@ -47,7 +47,7 @@ var products = {
     "p6":{
         titleType:1,
         img:"images/product/6.jpg",
-        name:"Thermo Scientifi Prima BT 过程开发质谱仪",
+        name:"Thermo Scientific Prima BT 过程开发质谱仪",
         intro:"Thermo Scientific&trade; Prima BT 过程开发质谱仪可提供高扫描速度和可重现的测量。此过程气体分析仪专为实验室的过程开发应用而设计，是高度精确的多端口扇形磁场质谱仪，用于气体浓度分析。",
         feature:"扫描扇形磁场技术<br>16 端口快速多流路进样器 (RMS)及6端口自动校准阀<br>高分析精确度、准确度和稳定性",
         type:2,
@@ -93,7 +93,7 @@ var products = {
         titleType:1,
         img:"images/product/11.jpg",
         name:"Thermo Scientific Nicolet  iS20 FTIR 光谱仪",
-        intro:"采用Nicolet&trade系列红外光谱仪，可快速无损获得高质量的蛋白质样品谱图，结合Nicolet&trade OMNIC软件的强大功能，能够实现对蛋白质二级结构的快速分析，获得各结构对应的峰面积值，可获得各条件下蛋白质二级结构的相关信息机变化情况，可以为蛋白质类样品的快速质控提供有力手段，结合其他参考分析数据，可实现对各二级结构的快速定量。",
+        intro:"采用Nicolet&trade系列红外光谱仪，可快速无损获得高质量的蛋白质样品谱图，结合Nicolet&trade; OMNIC软件的强大功能，能够实现对蛋白质二级结构的快速分析，获得各结构对应的峰面积值，可获得各条件下蛋白质二级结构的相关信息机变化情况，可以为蛋白质类样品的快速质控提供有力手段，结合其他参考分析数据，可实现对各二级结构的快速定量。",
         feature:"准确识别多组分样品；<br>提高数据重现性：先进的红外光源消除了热点效应，可获得更为一致的光谱数据；<br>简化工作流程效率：多色 LED 触摸板提供仪器状态的可视化反馈，从而提高分析效率（就绪、扫描、警报）; <br>系统性能验证（SPV）确保在日复一日的常规检测中获得可靠结果",
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/iS20 FTIR 光谱仪.pdf"
@@ -102,7 +102,7 @@ var products = {
         titleType:1,
         img:"images/product/12.jpg",
         name:"Thermo Scientific iCAP <br>PRO系列电感耦合等离子体发射光谱仪<br>(ICP-OES）",
-        intro:"Thermo Scientific&trade iCAP PRO 系列ICP-OES 整合了强大的多元素测定功能和灵活性，保证您的实验室无惧任何挑战。",
+        intro:"Thermo Scientific&trade; iCAP PRO 系列ICP-OES 整合了强大的多元素测定功能和灵活性，保证您的实验室无惧任何挑战。",
         feature:"稳健耐用：耐高基体垂直炬管，空气动力学设计的全新炬室, 强耐腐蚀氮化硅-刚玉吹扫接口 <br>易学易用：单手即可维护的插拔式进样系统，自动调谐、一键优化的Qtgera智能软件 <br>快速高效：一分钟智能全谱直读，快速冷启动紧凑光室，高速率读取专利全新400万像素CID检测器 <br>精益求精：eUV紫外增强模式显著提高紫外区元素(如铝、磷、硫)检测能力，精密光室恒温和全质量流量计<br>控制气路保证无与伦比的稳定性 <br>高投资回报：最低的单位样品耗时耗气量和长寿命陶瓷炬管保证最低的运行成本",
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/iCAP PRO 系列电感耦合等离子体发射光谱仪.pdf"
@@ -111,7 +111,7 @@ var products = {
         titleType:1,
         img:"images/product/28.jpg",
         name:"Thermo Scientific HyPerforma DynaDrive<br>一次性生物反应器",
-        intro:"新一代HyPerForma&trade DynaDrive&trade 一次性生物反应器，助力生物制药生产放大。",
+        intro:"新一代HyPerForma&trade; DynaDrive&trade; 一次性生物反应器，助力生物制药生产放大。",
         feature:"更优性能，支持工艺放大和灌流工艺<br>更高整体经济效益，支持大规模生产<br>更大培养规模，最高可达5000L",
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/一次性生物反应器.pdf"
@@ -120,7 +120,7 @@ var products = {
         titleType:3,
         img:"images/product/13.jpg",
         name:"Applied Biosystems VeritiPro PCR仪",
-        intro:"VeritiPro&trade PCR仪秉承了Applied Biosystems&trade PCR仪一贯以来的可靠品质和卓越性能，结合当今的工作环境进行进行创新升级，帮助您更轻松更快速完成PCR运行。",
+        intro:"VeritiPro&trade; PCR仪秉承了Applied Biosystems&trade; PCR仪一贯以来的可靠品质和卓越性能，结合当今的工作环境进行进行创新升级，帮助您更轻松更快速完成PCR运行。",
         feature:"6个独立控温区域，精准优化退火温度6℃/s变温速率，快速完成PCR实验 <br>热学模拟模式，轻松实现新旧仪器的过渡  <br>支持远程登录与控制，在任何地方连接和管理您的仪器",
         type:1,
         url:"http://cdn.dhteam.net/juze/smf/PCR仪.mp4"
@@ -129,7 +129,7 @@ var products = {
         titleType:1,
         img:"images/product/14.jpg",
         name:"Thermo Scientific Vanquish Core HPLC高效液相色谱",
-        intro:"Vanquish&trade Core是一款高耐压700 bar的高效液相色谱，定位于为所有分析服务实验室、前期研发、第三方检测和监管实验室等提供常规的高效液相色谱应用服务。",
+        intro:"Vanquish&trade; Core是一款高耐压700 bar的高效液相色谱，定位于为所有分析服务实验室、前期研发、第三方检测和监管实验室等提供常规的高效液相色谱应用服务。",
         feature:"交互式触摸屏：随时监控系统状态，内置中文维护视频，可视化监控，可抗腐蚀且支持戴手套操作<br>溶剂监测系统：智能化地对流动相余量及废液水平进行主动测量，让溶剂跑空成为历史<br>泵系统：多种型号可选，支持定期系统健康检查，保障设备长时间运行， 不间断交付实验结果<br>自动进样器：升级版自定义进样程序，免维护进样阀，预压缩技术提升进样重现性<br>柱温箱：静止空气加热或强制空气循环加热模式，保障结果重现性，轻松实现方法转移<br>检测器：多种检测器组合，支持电雾式/质谱检测器等，满足不同应用需求",
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/高效液相色谱.pdf"
@@ -168,7 +168,7 @@ var products = {
         titleType:1,
         img:"images/product/18.jpg",
         name:"Thermo Scientific KingFisher Apex 自动磁珠纯化系统",
-        intro:"KingFisher&trade Apex自动磁珠纯化系统可满足大量新冠病毒核酸检测需求，25分钟就可完成96个病毒样本的提取，最大限度地缩短了整个病毒检测周期，并且保证提取效果的稳定可靠，为下游检测提供高质量的核酸样品。KingFisher&trade Apex同时还适用于蛋白和细胞的纯化，使样品制备更简单易行。",
+        intro:"KingFisher&trade; Apex自动磁珠纯化系统可满足大量新冠病毒核酸检测需求，25分钟就可完成96个病毒样本的提取，最大限度地缩短了整个病毒检测周期，并且保证提取效果的稳定可靠，为下游检测提供高质量的核酸样品。KingFisher&trade; Apex同时还适用于蛋白和细胞的纯化，使样品制备更简单易行。",
         feature:"KingFisher&trade专利设计，无移液、离心步骤，防止交叉污染<br>在25-65分钟内即可纯化24或96份样品 <br>能实现更小的样本体积 (10 L) 洗脱，适用于高要求的下游应用<br>配置有2个紫外灯以防止污染，零死角全覆盖整个腔体<br>开放系统，适用于ThermoFisher&trade及其他品牌磁珠法试剂盒"
         ,
         type:2,
@@ -225,7 +225,7 @@ var products = {
         titleType:1,
         img:"images/product/24.jpg",
         name:"Thermo Scientific Orbitrap Exploris 240质谱仪",
-        intro:"Thermo Scientific&trade Orbitrap Exploris&trade 240质谱仪提供了高性能和多功能性，以定量的精度和准确性来驱动未知物发现和识别，并帮助客户扩大产能。具有智能数据获取的操作简单性有助于您对精准结果的快速跟踪，帮你可以应对任何挑战，并出色地实现你的目标。",
+        intro:"Thermo Scientific&trade; Orbitrap Exploris&trade; 240质谱仪提供了高性能和多功能性，以定量的精度和准确性来驱动未知物发现和识别，并帮助客户扩大产能。具有智能数据获取的操作简单性有助于您对精准结果的快速跟踪，帮你可以应对任何挑战，并出色地实现你的目标。",
         feature:"最高240,000的分辨率让质荷比相差mDa级别的干扰物无处遁形；最快22Hz的扫描速度和1.4Hz的极性切换<br>扫描速度保证化合物定性分析百无一漏<br>全新的离子路径设计，结合更加强悍的高场Orbitrap，带来前所未有的性能表现<br>EASY-IC内标校正源，可实现连续5天质量偏移小于1ppm，仪器超强的质量稳定性表现、节省仪器维护成本<br>与精力<br>AcquireX智能化数据依赖型采集模式，自动实时更新方法的包含列表和排除列表，以获得更多低丰度化合物<br>的二级碎片信息，实现复杂样品的深度分析<br>体积最小的Orbitrap高分辨质谱仪，体积约为QE系列的一半，为实验室节省更多空间",
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/240 质谱仪.pdf"
