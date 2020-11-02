@@ -82,11 +82,11 @@ function DevelopTest() {
     // iPortalPage.show();
     // iBigSencePage.show("Box3");
     // iSmallSencePage.show("Box1");
-    iProductPage.show("p1");
+    iProductPage.show("p5");
 
-    setTimeout(function(){
-        iProductPage.show("p2");
-    },3000)
+    // setTimeout(function(){
+    //     iProductPage.show("p2");
+    // },3000)
 }
 
 /**

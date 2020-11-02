@@ -53,6 +53,16 @@ var smallSencePage = function () {
             clickFlag = true;
         }, TRF_TIME)
     }
+    
+    /**
+     * 更新UI
+     */
+    _self.upDateUI = function(){
+        if(barFlag) {
+            var dis = WindowW > 1400 ? 150 : 100;
+            page.x = BgPageX + page.pivotX - dis;
+        }
+    }
 
     /**
      * 隐藏
@@ -174,8 +184,8 @@ var smallSencePage = function () {
         page.x = BgPageX + page.pivotX;
         Laya.stage.addChild(page);
 
-        page.backShowcase.x = 1624 - page.backShowcase.width + page.x - 150;
-        page.backSence.x = 1624 - page.backSence.width + page.x - 150;
+        page.backShowcase.x = 1624 - page.backShowcase.width + page.x - 95;
+        page.backSence.x = 1624 - page.backSence.width + page.x - 95;
 
         iPoint.init(page.pointBox1);
         iPoint.init(page.pointBox2);

@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":1,
+    "selecteID":5,
     "props":{"width":1624,"visible":false,"sceneColor":"#000000","height":750},
     "nodeParent":-1,
     "label":"View",
@@ -48,6 +48,19 @@
             "isAniNode":true,
             "hasChild":false,
             "compId":4,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Image",
+            "props":{"y":420,"x":1350,"var":"backShowcase","skin":"images/public/back.png"},
+            "nodeParent":1,
+            "label":"Image(backShowcase)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":5,
             "child":[
                 ]
         }],

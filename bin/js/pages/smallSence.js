@@ -53,6 +53,16 @@ var smallSencePage = function () {
             clickFlag = true;
         }, TRF_TIME)
     }
+    
+    /**
+     * 更新UI
+     */
+    _self.upDateUI = function(){
+        if(barFlag) {
+            var dis = WindowW > 1400 ? 150 : 100;
+            page.x = BgPageX + page.pivotX - dis;
+        }
+    }
 
     /**
      * 隐藏

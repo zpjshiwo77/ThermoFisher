@@ -2,7 +2,7 @@ var productPage = function(){
     var _self = this;
     var proData;
     var productBox,proImg,bghead,proTitle,proIntro,proFeature,wordCont;
-    
+    var btnImg,awardBtn,moreBtn;
     var videoBox,myVideo;
 
     /**
@@ -17,9 +17,9 @@ var productPage = function(){
      * 事件初始化
      */
     function eventInit() {
-        $("#moreBtn").on("touchend",openUrl)
+        moreBtn.on("touchend",openUrl)
         $("#backBtn").on("touchend",hidePage);
-        $("#awardBtn").on("touchend",gotoAward);
+        awardBtn.on("touchend",gotoAward);
         $("#closeBtn").on("touchend",hideVideo);
     }
 
@@ -76,6 +76,16 @@ var productPage = function(){
             proImg.show()
         }
         else proImg.hide();
+        if(proData.type == 0){
+            btnImg[0].src = "images/public/btn2.png";
+            moreBtn.hide();
+            awardBtn.css({width:"100%"})
+        }
+        else{
+            btnImg[0].src = "images/public/btn.png";
+            moreBtn.show();
+            awardBtn.css({width:"50%"})
+        }
         proTitle.html(proData.name);
         proIntro.html(proData.intro);
         proFeature.html(proData.feature);
@@ -87,14 +97,12 @@ var productPage = function(){
      * 打开链接
      */
     function openUrl(){
-        if(proData.type == 0){
-            // alert("尽请期待")
-        }
-        else if(proData.type == 1){
+        if(proData.type == 1){
             playVideo();
         }
         else if(proData.type == 2){
             window.open(proData.url);
+            updateUI();
         }
     }
 
@@ -103,6 +111,15 @@ var productPage = function(){
      */
     function gotoAward(){
         window.open("http://thermofisher-ciie.tbpchina.com/question.html");
+        updateUI();
+    }
+
+    function updateUI(){
+        barFlag = true;
+        iShowcasePage.upDateUI();
+        iBigSencePage.upDateUI();
+        iSmallSencePage.upDateUI();
+        iPortalPage.upDateUI();
     }
 
     /**
@@ -118,6 +135,9 @@ var productPage = function(){
         wordCont = $("#wordCont")
         videoBox = $("#videoBox")
         myVideo = $("#myVideo")[0]
+        btnImg = $("#btnImg")
+        awardBtn = $("#awardBtn")
+        moreBtn = $("#moreBtn")
     }
 }
 

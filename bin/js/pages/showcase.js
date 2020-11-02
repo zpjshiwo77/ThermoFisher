@@ -60,6 +60,7 @@ var showcasePage = function(){
         renderPage(t);
         page.visible = true;
         page.alpha = 0;
+        
         Laya.Tween.to(page, {
             alpha: 1
         }, TRF_TIME);
@@ -76,6 +77,13 @@ var showcasePage = function(){
                 page[type+"Point"].visible = (animeIndex > 10 && animeIndex < 18);
             }, TRF_TIME)
         }
+    }
+
+    /**
+     * 更新UI
+     */
+    _self.upDateUI = function(){
+        if(barFlag) page.x = BgPageX + page.pivotX - 100;
     }
 
     /**
@@ -124,8 +132,11 @@ var showcasePage = function(){
         }, 1600);
 
         setTimeout(function () {
+            page[type].stop();
+            page[type+"Point"].visible = true;
+            animeIndex = page[type].index;
             controlFlag = true;
-        }, 3200)
+        }, 2400)
     }
 
     /**

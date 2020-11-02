@@ -16,6 +16,7 @@ var portalPage = function(){
      */
     function eventInit() {
         page.btn.on(Laya.Event.MOUSE_DOWN, this, showNextPage);
+        page.backShowcase.on(Laya.Event.MOUSE_DOWN, this, backToShowcase);
     }
 
     /**
@@ -28,6 +29,16 @@ var portalPage = function(){
         Laya.Tween.to(page, {
             alpha: 1
         }, TRF_TIME);
+    }
+
+    /**
+     * 更新UI
+     */
+    _self.upDateUI = function(){
+        if(barFlag) {
+            var dis = WindowW > 1400 ? 150 : 100;
+            page.x = BgPageX + page.pivotX - dis;
+        }
     }
 
     /**
@@ -49,6 +60,14 @@ var portalPage = function(){
     function showNextPage(){
         _self.hide();
         iShowcasePage.show(type == "small" ? "big" : "small");
+    }
+
+    /**
+     * 返回场景页面
+     */
+    function backToShowcase(){
+        _self.hide();
+        iShowcasePage.show(type);
     }
 
     /**

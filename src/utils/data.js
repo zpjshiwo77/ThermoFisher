@@ -7,5 +7,6 @@ var MOVE_SENSITIVITY = 0.01;
 var TRF_TIME = 300;
 
 var WindowW = 0,BgPageX = 0;
+var barFlag = false;
 
 var iLoadingPage,iIndexPage,iBigSencePage,iChosePage,iPortalPage,iShowcasePage,iSmallSencePage;

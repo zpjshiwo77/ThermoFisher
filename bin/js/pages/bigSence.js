@@ -69,6 +69,16 @@ var bigSencePage = function () {
     }
 
     /**
+     * 更新UI
+     */
+    _self.upDateUI = function(){
+        if(barFlag) {
+            var dis = WindowW > 1400 ? 150 : 100;
+            page.x = BgPageX + page.pivotX - dis;
+        }
+    }
+
+    /**
      * 隐藏
      */
     _self.hide = function () {
@@ -159,14 +169,17 @@ var bigSencePage = function () {
         if (type == "Box1") {
             senceId = 1;
             page.ar.visible = true;
+            page.arTips.visible = true;
         }
         else if (type == "Box2") {
             senceId = 2;
             page.ar.visible = false;
+            page.arTips.visible = false;
         }
         else if (type == "Box3") {
             senceId = 3;
             page.ar.visible = true;
+            page.arTips.visible = true;
         }
 
         page.senceBg.source = Laya.Loader.getRes('images/product400/s' + senceId + '.jpg');
