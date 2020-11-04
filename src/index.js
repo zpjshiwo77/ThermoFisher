@@ -1,4 +1,4 @@
-/**
+﻿/**
  * laya初始化
  */
 function LayaInit() {
@@ -9,7 +9,7 @@ function LayaInit() {
     Laya.stage.screenMode = "horizontal";
     Laya.stage.bgColor = "#dddddd";
     Laya.UIConfig.closeDialogOnSide = false;
-    // Laya.URL.basePath = "https://cdn2.dhteam.net/osm/";
+    Laya.URL.basePath = "https://cdn.dhteam.net/thermoFisher/";
     Laya.loader.load(PreResources, laya.utils.Handler.create(this, loadUIInit), null);
 }
 LayaInit();
@@ -64,11 +64,11 @@ function loadComplete() {
     if (typeof wx) {
         wxUser.init({
             shareInfo: {
-                title: "测试",
-                friend: "测试",
-                timeline: "测试",
-                // link: "https://wechat.dhteam.net/osm/index.html",
-                // image: "https://wechat.dhteam.net/osm/share.jpg",
+                title: "创领探索 携手前行",
+                friend: "赛默飞亮相第三届中国国际进口博览会",
+                timeline: "创领探索 携手前行",
+                link: "https://wechat.dhteam.net/lillysec/thermoFisher5/",
+                image: "https://cdn.dhteam.net/thermoFisher/share.jpg",
             }
         });
     }
