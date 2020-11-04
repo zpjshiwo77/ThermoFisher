@@ -2,6 +2,8 @@ var PreResources = [
     { url: "images/loading/bar1.png", type: Loader.IMAGE },
     { url: "images/loading/bar2.png", type: Loader.IMAGE },
     { url: "images/loading/bg.jpg", type: Loader.IMAGE },
+    { url: "images/common/bgm_on.png", type: Loader.IMAGE },
+    { url: "images/common/bgm_off.png", type: Loader.IMAGE },
     { url: 'res/atlas/images/loading.atlas', type: Loader.ATLAS }
 ];
 var Resources = [

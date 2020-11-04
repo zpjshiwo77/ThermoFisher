@@ -63,7 +63,7 @@ var chosePage = function(){
         page = new choseUI();
         page.x = BgPageX + page.pivotX;
         Laya.stage.addChild(page);
-        page.logo.x = 1624 - page.logo.width + page.x - 60;
+        page.logo.x = 1624 - page.logo.width + page.x - 100;
     }
 }
 

@@ -10,3 +10,5 @@ var WindowW = 0,BgPageX = 0;
 var barFlag = false;
 
 var iLoadingPage,iIndexPage,iBigSencePage,iChosePage,iPortalPage,iShowcasePage,iSmallSencePage;
+
+let BgmUrl = "https://wechat.dhteam.net/osm/audio/bgm.mp3";

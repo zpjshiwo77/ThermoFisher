@@ -24,6 +24,7 @@ function loadUIInit() {
     // landscape_lock();
 
     iLoadingPage.init();
+    iBgm.init();
 
     for (var i = 0; i < unpackImg.length; i++) {
         var item = { url: unpackImg[i], type: Loader.IMAGE };

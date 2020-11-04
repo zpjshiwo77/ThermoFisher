@@ -86,6 +86,7 @@ var productPage = function(){
             moreBtn.show();
             awardBtn.css({width:"50%"})
         }
+        (proData.img == "images/product/12.jpg" ? proTitle.addClass("sp") : proTitle.removeClass("sp"))
         proTitle.html(proData.name);
         proIntro.html(proData.intro);
         proFeature.html(proData.feature);
@@ -120,6 +121,7 @@ var productPage = function(){
         iBigSencePage.upDateUI();
         iSmallSencePage.upDateUI();
         iPortalPage.upDateUI();
+        iBgm.upDateUI();
     }
 
     /**

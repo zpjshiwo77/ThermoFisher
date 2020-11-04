@@ -2,6 +2,26 @@ var CLASS$=Laya.class;
 var STATICATTR$=Laya.static;
 var View=laya.ui.View;
 var Dialog=laya.ui.Dialog;
+var bgmBtnUI=(function(_super){
+		function bgmBtnUI(){
+			
+		    this.bgmBtn=null;
+
+			bgmBtnUI.__super.call(this);
+		}
+
+		CLASS$(bgmBtnUI,'ui.bgmBtnUI',_super);
+		var __proto__=bgmBtnUI.prototype;
+		__proto__.createChildren=function(){
+		    
+			laya.ui.Component.prototype.createChildren.call(this);
+			this.createView(bgmBtnUI.uiView);
+
+		}
+
+		bgmBtnUI.uiView={"type":"View","props":{"width":58,"height":58},"child":[{"type":"Image","props":{"y":4,"x":3,"var":"bgmBtn","skin":"images/common/bgm_on.png"}}]};
+		return bgmBtnUI;
+	})(View);
 var bigSenceUI=(function(_super){
 		function bigSenceUI(){
 			

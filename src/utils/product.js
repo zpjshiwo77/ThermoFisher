@@ -11,9 +11,9 @@ var products = {
     "p2":{
         titleType:1,
         img:"images/product/2.jpg",
-        name:"Thermo Scientific Krio G4 冷冻透射电子显微镜",
-        intro:"Krios&trade; G4冷冻透射电镜旨在为用户提供一种更简单、更快速和更可靠的方法来从分子水平上揭示生命机制。作为同类产品中最紧凑的产品，Krios&trade; G4配备稳定性非常高的300kV透射电镜平台和行业领先的自动样品加载器，非常适用于如自动化单颗粒分析等流程。作为全新一代的Krios&trade平台，Krios&trade; G4采用了全新的光学模式、具有改进的光学指标和实时预处理功能，极大提高了工作效率和分辨率性能。",
-        feature:"改进的人体工学，增强的自动化功能、系统的用户指南和先进的性能监控，使样品更换和数据采集更加轻松；<br>极大提高生产率，无边缘效应成像（FFI）、无像差成像区域位移（AFIS）和（可选）Falcon 4 检测器的强大组合显<br>著提高了 SPA 的通量<br>工作流程连通性，无缝衔接 SPA 冷冻电子断层扫描和 MicroED 工作流程，在整个工作流程中实现方便且无污染风险的样品转移",
+        name:"Thermo Scientific Krios G4 冷冻透射电子显微镜",
+        intro:"Krios&trade; G4冷冻透射电镜旨在为用户提供一种更简单、更快速和更可靠的方法来从分子水平上揭示生命机制。作为同类产品中最紧凑的产品，Krios&trade; G4配备稳定性非常高的300kV透射电镜平台和行业领先的自动样品加载器，非常适用于如自动化单颗粒分析等流程。作为全新一代的Krios&trade; 平台，Krios&trade; G4采用了全新的光学模式、具有改进的光学指标和实时预处理功能，极大提高了工作效率和分辨率性能。",
+        feature:"改进的人体工学，增强的自动化功能、系统的用户指南和先进的性能监控，使样品更换和数据采集更加轻松；<br>极大提高生产率，无边缘效应成像（FFI）、无像差成像区域位移（AFIS）和（可选）Falcon 4 检测器的强大组合显著提高了SPA的通量工作流程连通性，无缝衔接 SPA 冷冻电子断层扫描和 MicroED 工作流程，在整个工作流程中实现方便且无污染风险的样品转移",
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/G4 冷冻透射电子显微镜.pdf"
     },
@@ -41,8 +41,8 @@ var products = {
         name:"Thermo Scientific Phadia 250<br>全自动荧光免疫分析仪",
         intro:"用于全自动检测人体血液中的总IgE及特异性IgE（过敏原）浓度，帮助医生诊断过敏性疾病（例如，湿疹，过敏性哮喘，过敏性鼻炎等）。",
         feature:"能够快速准确的分析任何类型的样品;<br>Thermo Scientific&trade; ValPro&trade; 仪器资格认证软件包可使仪器计量认证工作（DQ、IQ、OQ 和 PQ）变得更容易;<br>结果的重现性与配置、维护、用户或环境等因素无关;<br>适合实验室或工厂使用，可进行快速，精确和准确测量",
-        type:0,
-        url:""
+        type:2,
+        url:"http://cdn.dhteam.net/juze/smf/%E5%85%A8%E8%87%AA%E5%8A%A8%E8%8D%A7%E5%85%89%E5%85%8D%E7%96%AB%E5%88%86%E6%9E%90%E4%BB%AA.pdf"
     },
     "p6":{
         titleType:1,
@@ -93,7 +93,7 @@ var products = {
         titleType:1,
         img:"images/product/11.jpg",
         name:"Thermo Scientific Nicolet  iS20 FTIR 光谱仪",
-        intro:"采用Nicolet&trade系列红外光谱仪，可快速无损获得高质量的蛋白质样品谱图，结合Nicolet&trade; OMNIC软件的强大功能，能够实现对蛋白质二级结构的快速分析，获得各结构对应的峰面积值，可获得各条件下蛋白质二级结构的相关信息机变化情况，可以为蛋白质类样品的快速质控提供有力手段，结合其他参考分析数据，可实现对各二级结构的快速定量。",
+        intro:"采用Nicolet&trade; 系列红外光谱仪，可快速无损获得高质量的蛋白质样品谱图，结合Nicolet&trade; OMNIC软件的强大功能，能够实现对蛋白质二级结构的快速分析，获得各结构对应的峰面积值，可获得各条件下蛋白质二级结构的相关信息机变化情况，可以为蛋白质类样品的快速质控提供有力手段，结合其他参考分析数据，可实现对各二级结构的快速定量。",
         feature:"准确识别多组分样品；<br>提高数据重现性：先进的红外光源消除了热点效应，可获得更为一致的光谱数据；<br>简化工作流程效率：多色 LED 触摸板提供仪器状态的可视化反馈，从而提高分析效率（就绪、扫描、警报）; <br>系统性能验证（SPV）确保在日复一日的常规检测中获得可靠结果",
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/iS20 FTIR 光谱仪.pdf"
@@ -101,7 +101,7 @@ var products = {
     "p12":{
         titleType:1,
         img:"images/product/12.jpg",
-        name:"Thermo Scientific iCAP <br>PRO系列电感耦合等离子体发射光谱仪<br>(ICP-OES）",
+        name:"Thermo Scientific iCAP PRO系列<br>电感耦合等离子体发射光谱仪<br>(ICP-OES）",
         intro:"Thermo Scientific&trade; iCAP PRO 系列ICP-OES 整合了强大的多元素测定功能和灵活性，保证您的实验室无惧任何挑战。",
         feature:"稳健耐用：耐高基体垂直炬管，空气动力学设计的全新炬室, 强耐腐蚀氮化硅-刚玉吹扫接口 <br>易学易用：单手即可维护的插拔式进样系统，自动调谐、一键优化的Qtgera智能软件 <br>快速高效：一分钟智能全谱直读，快速冷启动紧凑光室，高速率读取专利全新400万像素CID检测器 <br>精益求精：eUV紫外增强模式显著提高紫外区元素(如铝、磷、硫)检测能力，精密光室恒温和全质量流量计<br>控制气路保证无与伦比的稳定性 <br>高投资回报：最低的单位样品耗时耗气量和长寿命陶瓷炬管保证最低的运行成本",
         type:2,
@@ -169,7 +169,7 @@ var products = {
         img:"images/product/18.jpg",
         name:"Thermo Scientific KingFisher Apex 自动磁珠纯化系统",
         intro:"KingFisher&trade; Apex自动磁珠纯化系统可满足大量新冠病毒核酸检测需求，25分钟就可完成96个病毒样本的提取，最大限度地缩短了整个病毒检测周期，并且保证提取效果的稳定可靠，为下游检测提供高质量的核酸样品。KingFisher&trade; Apex同时还适用于蛋白和细胞的纯化，使样品制备更简单易行。",
-        feature:"KingFisher&trade专利设计，无移液、离心步骤，防止交叉污染<br>在25-65分钟内即可纯化24或96份样品 <br>能实现更小的样本体积 (10 L) 洗脱，适用于高要求的下游应用<br>配置有2个紫外灯以防止污染，零死角全覆盖整个腔体<br>开放系统，适用于ThermoFisher&trade及其他品牌磁珠法试剂盒"
+        feature:"KingFisher&trade; 专利设计，无移液、离心步骤，防止交叉污染<br>在25-65分钟内即可纯化24或96份样品 <br>能实现更小的样本体积 (10 L) 洗脱，适用于高要求的下游应用<br>配置有2个紫外灯以防止污染，零死角全覆盖整个腔体<br>开放系统，适用于Thermo Fisher&trade; 及其他品牌磁珠法试剂盒"
         ,
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/自动磁珠纯化系统.pdf"
@@ -188,7 +188,7 @@ var products = {
         titleType:3,
         img:"images/product/20.jpg",
         name:"Applied Biosystems TaqMan 新型冠状病毒检测试剂盒",
-        intro:"基于TaqMan&trade;荧光定量探针技术，针对新型冠状病毒（SARS-CoV-2）的ORF1ab基因,N基因和S基因的相关区域分别进行了探针、引物设计，每个靶标一个反应管，并配置了针对阳性对照品。是针对新型冠状病毒（SARS-CoV-2）核酸的快速检测方案。",
+        intro:"基于TaqMan&trade; 荧光定量探针技术，针对新型冠状病毒（SARS-CoV-2）的ORF1ab基因,N基因和S基因的相关区域分别进行了探针、引物设计，每个靶标一个反应管，并配置了针对阳性对照品。是针对新型冠状病毒（SARS-CoV-2）核酸的快速检测方案。",
         feature:"针对新型冠状病毒的3个特异区域（ORF1ab/N/S）进行靶标探针设计，提高检测特异性<br>采用TaqMan探针技术进行实时荧光定量PCR检测，提高检测准确性"
         ,
         type:2,
@@ -207,7 +207,7 @@ var products = {
         titleType:2,
         img:"images/product/22.jpg",
         name:"Ion Torrent Genexus 一体化高通量测序系统",
-        intro:"Ion Torrent&trade; Genexus&trade; 一体化高通量测序系统是一套完全整合的高通量基因测序（NGS）平台，只需两步简单的操作，即可在一天内自动、高效地完成样本到报告的全流程。一站式的解决方案重新定义了NGS基因组分析模式，可开展肿瘤、微生物、感染性疾病、遗传病和基因表达等研究，同时支持Ion     AmpliSeq&trade;  定制Panel的应用。",
+        intro:"Ion Torrent&trade; Genexus&trade; 一体化高通量测序系统是一套完全整合的高通量基因测序（NGS）平台，只需两步简单的操作，即可在一天内自动、高效地完成样本到报告的全流程。一站式的解决方案重新定义了NGS基因组分析模式，可开展肿瘤、微生物、感染性疾病、遗传病和基因表达等研究，同时支持Ion AmpliSeq&trade;  定制Panel的应用。",
         feature:"从样本到报告，一站式方案，前所未有的自动化<br>高速周转时间，只需一天<br>通量灵活，无需攒样<br>生产工厂于FDA注册，拥有ISO 13485证书<br>应用方向广泛：肿瘤、遗传、生殖健康、感染性疾病等",
         type:1,
         url:"http://cdn.dhteam.net/juze/smf/一体化高通量测序系统.mp4"
@@ -233,7 +233,7 @@ var products = {
     "p26":{
         titleType:1,
         img:"images/product/25.jpg",
-        name:"Thermo Scientific Multifuge X4R PRO <br>通用台式冷冻离心机",
+        name:"Thermo Scientific Multifuge X4 PRO <br>通用台式冷冻离心机",
         intro:"最大处理容量4×1000ml，多样的转头选择，满足各种离心应用的需要。液晶触摸屏控制系统，直观易使用；可存储原始实验数据以满足GMP规范，可满足分子生物学、细胞培养、临床检验、细胞治疗等应用的需要。转头采用自锁技术，可在3秒钟内更换转头，应用灵活，满足多用途通用实验室的应用之需。",
         feature:"简单的触摸屏编程<br>智能化控制轻松监控运行进度<br>前置USB端口方便插入及保存离心数据<br>日志数据管理和连接   <br>可离心4L的水平转子，最多可同时离心196根采血管<br>可离心1.5L的角转子<br>最大RCF：25,830 x g<br>可选配防生物污染密封盖，可戴手套单手操作，实现盖子的开启 / 闭合。人机功效性的设计，左、右手操作均很方便",
         type:2,
@@ -242,16 +242,16 @@ var products = {
     "p27":{
         titleType:3,
         img:"",
-        name:"Rx病毒核酸分离预分装试剂盒",
-        intro:"MagMAX&trade病毒核酸分离试剂盒采用基于磁珠的技术，预分装试剂盒可直接与KingFisher&trade仪器搭配使用，从多种病毒样品类型中自动纯化出高质量的核酸，为COVID-19核酸检测节省时间并提高重复性。",
-        feature:"可扩展性：仅需手动和自动化实验方案就可覆盖从低到高的进样体积范围<br>多样本：与所有MagMAX&trade试剂盒一样，病毒试剂盒可兼容多种样本类型<br>回收率：与低滴度样本兼容<br>无需carrier：消除了对carrier的需求，减少了与NGS的干扰，并减少了所需的步骤方便快捷自动化使用：预分装试剂盒可直接搭配KingFisher&trade仪器使用",
+        name:"MagMAX Rx病毒核酸分离预分装试剂盒",
+        intro:"MagMAX&trade; 病毒核酸分离试剂盒采用基于磁珠的技术，预分装试剂盒可直接与KingFisher&trade; 仪器搭配使用，从多种病毒样品类型中自动纯化出高质量的核酸，为COVID-19核酸检测节省时间并提高重复性。",
+        feature:"可扩展性：仅需手动和自动化实验方案就可覆盖从低到高的进样体积范围<br>多样本：与所有MagMAX&trade; 试剂盒一样，病毒试剂盒可兼容多种样本类型<br>回收率：与低滴度样本兼容<br>无需carrier：消除了对carrier的需求，减少了与NGS的干扰，并减少了所需的步骤方便快捷自动化使用：预分装试剂盒可直接搭配KingFisher&trade; 仪器使用",
         type:0,
         url:""
     },
     "p28":{
         titleType:1,
         img:"images/product/27.jpg",
-        name:"高通量 COVID-19 核酸检测系统",
+        name:"Amplitude 高通量 COVID-19 核酸检测系统",
         intro:"高度整合了样品准备、反应体系配置、核酸提取、实时荧光定量PCR检测等顶尖方案，为用户提供样本到报告的自动化全流程解决方案，以实现对COVID-19样品的高通量核酸检测分析。",
         feature:"高通量样品检测：每天可检测 7,000 个样品<br>最大程度减少手动操作：提高检测准确性<br>提高检测一致性：通过样品记录、数据跟踪和LIMS等，提高样品处理的一致性方案领先：所整合的各环节方案为行业领先",
         type:1,
