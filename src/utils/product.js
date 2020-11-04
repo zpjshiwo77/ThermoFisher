@@ -111,7 +111,7 @@ var products = {
         titleType:1,
         img:"images/product/28.jpg",
         name:"Thermo Scientific HyPerforma DynaDrive<br>一次性生物反应器",
-        intro:"新一代HyPerForma&trade; DynaDrive&trade; 一次性生物反应器，助力生物制药生产放大。",
+        intro:"新一代HyPerforma&trade; DynaDrive&trade; 一次性生物反应器，助力生物制药生产放大。",
         feature:"更优性能，支持工艺放大和灌流工艺<br>更高整体经济效益，支持大规模生产<br>更大培养规模，最高可达5000L",
         type:2,
         url:"http://cdn.dhteam.net/juze/smf/一次性生物反应器.pdf"
